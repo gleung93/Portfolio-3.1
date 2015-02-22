@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         
     watch: {
       scripts: {
-        files: ['src/data/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
+        files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
         tasks: ["compass", "uglify:dev", 'assemble'],
         options: {
           spawn: false,
