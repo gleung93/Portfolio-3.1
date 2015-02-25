@@ -40,6 +40,15 @@ module.exports = function(grunt) {
         		}
       		}
     	},
+    	
+ 		vulcanize: {
+    		default: {
+      			options: {},
+      			files: {
+        			'dist/transition_build.html': 'src/polymer/nested.html'
+      			},
+    		},
+  		},
 
         uglify : {
             dev : {
@@ -67,6 +76,7 @@ module.exports = function(grunt) {
     });
     
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-vulcanize');
     grunt.loadNpmTasks('assemble' );
     grunt.loadNpmTasks('grunt-contrib-compass');
     
