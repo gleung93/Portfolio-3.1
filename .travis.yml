@@ -1,12 +1,16 @@
 language: node_js
 branches:
   only:
-    - master
+  - master
 before_install: bundle install
 before_script: npm install -g grunt-cli
 script: grunt build
 deploy:
   provider: s3
-  access_key_id: AKIAILDI32JHP7R3V75A
-  secret_access_key: 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
-  bucket: leungportfolio3.1
+  access_key_id: AKIAJJLZSLJXQBVDPS3Q
+  secret_access_key:
+    secure: tsPXVh1PMRnqgS6G7n8vFzMc6ISLLuDUq9s0OAEZAMsTPf74FHqrw5sLY9RmNpHt4qxrovv4znu4PP3Zt8A6z6w4yfuPONpZQtbXt+DTLC0T0MOeKY283xvrQsOcju2jGy7IuzUVJoV3veJwwGMPGgzfgwHN5urTrylcC9HH0JI=
+  bucket: leungportfolio3.1.s3-website-us-west-2.amazonaws.com
+  acl: public_read
+  on:
+    repo: gleung93/Portfolio-3.1
