@@ -9,4 +9,4 @@ deploy:
   provider: s3
   access_key_id: AKIAILDI32JHP7R3V75A
   secret_access_key: 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
-  bucket: Portfolio-3.1
+  bucket: leungportfolio3.1x
