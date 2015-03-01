@@ -2,9 +2,6 @@ module.exports = function(grunt) {
 
     "use strict";
 
-    grunt.loadNpmTasks("grunt-contrib-sass");
-    grunt.loadNpmTasks("grunt-contrib-uglify");
-
     grunt.initConfig({
     
    		assemble: {
@@ -31,9 +28,9 @@ module.exports = function(grunt) {
         		options: {
          			environment: 'production',
           			httpPath: 'dist/',
-          			cssDir: 'dist/css',
+          			cssDir: 'dist/assets/css',
           			sassDir: 'src/sass',
-          			imagesDir: 'dist/assets',
+          			imagesDir: 'dist/assets/images',
           			relativeAssets: true,
           			outputStyle: 'compressed',
           			importPath: ['bower_components']
@@ -49,25 +46,38 @@ module.exports = function(grunt) {
       			},
     		},
   		},
+        
+    	copy: {
+      		BootstrapCss: {
+        		src: 'bower_components/bootstrap/dist/css/bootstrap.css',
+        		dest: 'dist/assets/css/bootstrap.css',
+      		},    		
+      		 BootstrapCssMap: {
+        		src: 'bower_components/bootstrap/dist/css/bootstrap.css.map',
+        		dest: 'dist/assets/css/bootstrap.css.map',
+      		},
+      		BootstrapJs: {
+        		src: 'bower_components/bootstrap/dist/js/bootstrap.js',
+        		dest: 'dist/assets/js/bootstrap.js',
+      		}
 
-        uglify : {
-            dev : {
-                options : {
-                    //compress : true,
-                    mangle : true,
-                    preserveComments : false
-                },
-
-                files: {
-                    "dist/js/app.min.js" : ["src/js/libs/atomic.js", "src/js/app/app.js"]
-                }
-            }
-        },
+    	},
+    	
+    	concat: {
+      		options: {
+        		stripBanners: 'all',
+        		separator: ';'
+      		},
+      		dist: {
+        		src: ['src/js/*.js'],
+        		dest: 'dist/js/portfolio.js'
+      		}
+   		},
         
     watch: {
       scripts: {
         files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
-        tasks: ["compass", "uglify:dev", 'assemble'],
+        tasks: ["compass", "copy", 'assemble'],
         options: {
           spawn: false,
         },
@@ -77,8 +87,9 @@ module.exports = function(grunt) {
     
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-vulcanize');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('assemble' );
     grunt.loadNpmTasks('grunt-contrib-compass');
     
-    grunt.registerTask("build", ["compass", "uglify:dev", 'assemble']);
+    grunt.registerTask("build", ["compass", "copy", 'assemble']);
 };
