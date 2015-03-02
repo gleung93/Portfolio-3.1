@@ -1,10 +1,21 @@
 $primary-font-stack: "Roboto", sans-serif
 $secondary-font-stack: "Lora", serif
 
+html, body
+	font: 100% $primary-font-stack
+
 h1
 	font: 100% $primary-font-stack
 	font-weight: 500
-	font-size: 36px
+	font-size: 64px
+	text-transform: uppercase
+	@media (max-width: 767px)
+		font-size: 48px
+
+h2
+	font: 100% $primary-font-stack
+	font-weight: 100
+	font-size: 46px
 	text-transform: uppercase
 
 h3
@@ -17,6 +28,12 @@ h4
 	font: 100% $primary-font-stack
 	font-weight: 700
 	font-size: 19px
+	line-height: 27px
+	
+h5
+	font: 100% $primary-font-stack
+	font-weight: 200
+	font-size: 19px
 
 p
 	font: 100% $secondary-font-stack
@@ -27,3 +44,6 @@ p
 	@media (max-width: 767px)
 		font-size: 17px
 		line-height: 25px
+		
+.text-white
+	color: white
