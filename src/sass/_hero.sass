@@ -1,5 +1,23 @@
 .hero
+	position: relative
 	background-color: #222
 	color: white
 	height: 400px
 	margin-bottom: 30px
+
+$arrow-circle-diameter: 60px
+
+.arrow-circle
+	position: absolute
+	left: 0
+	right: 0
+	height: $arrow-circle-diameter
+	width: $arrow-circle-diameter
+	border-radius: 50%
+	background-color: #FAFAFA
+	bottom: $arrow-circle-diameter/-2
+
+.arrow-down
+	width: $arrow-circle-diameter
+	height: $arrow-circle-diameter
+	padding: $arrow-circle-diameter/5
