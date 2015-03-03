@@ -1,38 +1,55 @@
 <div class="container grid">
-	<ul class="col-xs-12 no-padding">
+<div class="row">
+<ul class="col-xs-12">
 	
-		<li class="col-xs-12">
-			<div class="card-large" style="background-image: url('{{ imgsrc }}')">
+	<li class="row">
+		<div class="col-xs-12">
+			<div class="card-large" style="background-image: url('{{ solar.imgsrc }}')">
 			<div class="black-overlay"></div>
 				<div class="col-md-8 col-md-offset-2 vertical-align">
-					<h2 class="text-center text-white">{{ title }}</h2>
-					<h5 class="text-center text-white">{{ description }}</h5>
-					<div class="text-center"><button type="button" class="btn btn-primary">{{ cta }}</button></div>
+					<h2 class="text-center text-white">{{ solar.title }}</h2>
+					<h5 class="text-center text-white">{{ solar.description }}</h5>
+					<div class="text-center"><button type="button" class="btn btn-primary">{{ solar.cta }}</button></div>
 				</div>
 			</div>
-		</li>
-		
-		<li class="col-md-8 col-sm-12 col-xs-12">
+		</div>
+	</li>
+	
+	<li class="row">
+		<div class="col-md-8 col-sm-12 col-xs-12">
 			<div class="card-medium">
-				<img class="img-responsive card-medium-img" src="{{ second-imgsrc }}">
+				<div class="card-medium-img">
+					<h2 class="col-xs-7 vertical-align text-white">{{ thermostats.title }}</h2>
+					<img class="col-xs-5" src="{{ thermostats.imgsrc }}">
+				</div>
 			</div>
-		</li>
+		</div>
+	</li>
 		
-		<li class="col-md-4 col-sm-6 col-xs-12">
+	<li class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
 			<div class="card">Small Project
 			</div>
-		</li>
+		</div>
+	</li>
 		
-		<li class="col-md-4 col-sm-6 col-xs-12">
+	<li class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
 			<div class="card">Small Project</div>
-		</li>
+		</div>
+	</li>
 		
-		<li class="col-md-4 col-sm-6 col-xs-12">
+	<li class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
 			<div class="card">Small Project</div>
-		</li>
+		</div>
+	</li>
 		
-		<li class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">Small Project</div
-		></li>
-	</ul>
+	<li class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="card">Small Project</div>
+		</div>
+	</li>
+</ul>
+</div>
 </div>
