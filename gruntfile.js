@@ -59,6 +59,10 @@ module.exports = function(grunt) {
       		BootstrapJs: {
         		src: 'bower_components/bootstrap/dist/js/bootstrap.js',
         		dest: 'dist/assets/js/bootstrap.js',
+      		},
+      		SkrollrJs: {
+        		src: 'src/js/skrollr.min.js',
+        		dest: 'dist/assets/js/skrollr.min.js',
       		}
 
     	},
@@ -71,13 +75,13 @@ module.exports = function(grunt) {
       		dist: {
         		src: ['src/js/*.js'],
         		dest: 'dist/js/portfolio.js'
-      		}
+      		},
    		},
         
     watch: {
       scripts: {
         files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
-        tasks: ["compass", "copy", 'assemble'],
+        tasks: ["compass", "copy", 'assemble', 'concat'],
         options: {
           spawn: false,
         },
@@ -88,8 +92,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-vulcanize');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('assemble' );
     grunt.loadNpmTasks('grunt-contrib-compass');
     
-    grunt.registerTask("build", ["compass", "copy", 'assemble']);
+    grunt.registerTask("build", ["compass", "copy", 'assemble', 'concat']);
 };

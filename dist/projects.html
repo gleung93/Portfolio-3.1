@@ -15,6 +15,8 @@
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/skrollr.min.js"></script>
+        <script src="assets/js/app.js"></script>
         
     </head>
         
@@ -24,10 +26,10 @@
 		<div class="container">
 		
     		<div class="navbar-header">
-      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>                        
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="icon-bar top-bar"></span>
+        			<span class="icon-bar middle-bar"></span>
+        			<span class="icon-bar bottom-bar"></span>                        
       			</button>
 				<a class="navbar-brand " href="#">GRANT LEUNG</a>
     		</div>
@@ -47,8 +49,8 @@
 
 <div class="container-fluid hero">
 	<div class="container vertical-align">
-		<h1 class="text-center">Grant Leung</h1>
-		<h3 class="text-center"><span class="line-break">Interaction Designer +</span><span class="line-break"> Front-End Developer</span></h3>
+		<h1 class="text-center">Projects</h1>
+		<h3 class="text-center"><span class="line-break"></span><span class="line-break"> </span></h3>
 	</div>
 	<div class="arrow-circle center">
 		<img class="arrow-down center" src="assets/images/down_arrow.svg">
@@ -57,54 +59,98 @@
 
 <div class="container grid">
 <div class="row">
-<ul class="col-xs-12">
+<ul class="col-xs-12"> <!--This creates too0 much padding -->
 	
-	<li class="row">
+	<!--
+	<li>
 		<div class="col-xs-12">
 			<div class="card-large" style="background-image: url('assets/images/macbook-mockup.png')">
 			<div class="black-overlay"></div>
 				<div class="col-md-8 col-md-offset-2 vertical-align">
 					<h2 class="text-center text-white">PG&amp;E Solar Dashboard</h2>
-					<h5 class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h5>
+					<h5 class="text-center text-white">An online experience to help PG&amp;E solar customers understand and visualize their electricity bill</h5>
 					<div class="text-center"><button type="button" class="btn btn-primary">View Case Study</button></div>
 				</div>
 			</div>
 		</div>
 	</li>
+	-->
 	
-	<li class="row">
+	<li>
 		<div class="col-md-8 col-sm-12 col-xs-12">
 			<div class="card-medium">
-				<div class="card-medium-img">
-					<h2 class="col-xs-7 vertical-align text-white">Thermostats</h2>
-					<img class="col-xs-5" src="assets/images/android_thermostat.png">
-				</div>
+				<div class="card-medium-img" style="background-image: url('assets/images/macbook-mockup.png')"></div>
+				<div class="card-text">
+					<h4 class="weight-medium">PG&amp;E Solar Dashboard</h4>
+					<h5 class="weight-light">An online experience to help PG&amp;E solar customers understand and visualize their electricity bill</h5>
+					<a><h5 class="weight-light ">View Case Study</h5></a>
+				</div
 			</div>
 		</div>
 	</li>
 		
-	<li class="row">
+	<li>
 		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">Small Project
+			<div class="card">
+				<div class="card-medium-img" style=""></div>
+				<div class="card-text">
+					<h4 class="weight-medium">Opower Thermostat</h4>
+					<h5 class="weight-light">Improving the mobile experience and utilizing behavioral science to reduce energy consumption</h5>
+					<a><h5 class="weight-light ">View Case Study</h5></a>
+				</div
 			</div>
 		</div>
 	</li>
 		
-	<li class="row">
+	<li>
 		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">Small Project</div>
+			<div class="card">
+				<div class="card-medium-img" style=""></div>
+				<div class="card-text">
+					<h4 class="weight-medium">Opower Thermostat</h4>
+					<h5 class="weight-light">Improving the mobile experience and utilizing behavioral science to reduce energy consumption</h5>
+					<a><h5 class="weight-light ">View Case Study</h5></a>
+				</div
+			</div>
+		</div>
+	</li>
+	
+	<li>
+		<div class="col-md-8 col-sm-12 col-xs-12">
+			<div class="card-medium">
+				<div class="card-medium-img" style="background-image: url('assets/images/thermostat_thumb.png')"></div>
+				<div class="card-text">
+					<h4 class="weight-medium">Opower Thermostat</h4>
+					<h5 class="weight-light">Improving the mobile experience and utilizing behavioral science to reduce energy consumption</h5>
+					<a><h5 class="weight-light ">View Case Study</h5></a>
+				</div
+			</div>
 		</div>
 	</li>
 		
-	<li class="row">
+	<li>
 		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">Small Project</div>
+			<div class="card">
+				<div class="card-medium-img" style=""></div>
+				<div class="card-text">
+					<h4 class="weight-medium">Opower Thermostat</h4>
+					<h5 class="weight-light">Improving the mobile experience and utilizing behavioral science to reduce energy consumption</h5>
+					<a><h5 class="weight-light ">View Case Study</h5></a>
+				</div
+			</div>
 		</div>
 	</li>
-		
-	<li class="row">
+	
+	<li>
 		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">Small Project</div>
+			<div class="card">
+				<div class="card-medium-img" style=""></div>
+				<div class="card-text">
+					<h4 class="weight-medium">Opower Thermostat</h4>
+					<h5 class="weight-light">Improving the mobile experience and utilizing behavioral science to reduce energy consumption</h5>
+					<a><h5 class="weight-light">View Case Study</h5></a>
+				</div
+			</div>
 		</div>
 	</li>
 </ul>

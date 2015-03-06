@@ -1,15 +1,18 @@
 {
+	"hero": {
+		"title": "Projects"
+		},
 	"solar": {
 		"imgsrc": "assets/images/macbook-mockup.png",
 		"title": "PG&E Solar Dashboard",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+		"description": "An online experience to help PG&E solar customers understand and visualize their electricity bill",
   		"cta": "View Case Study"
 		},
 	"thermostats": {
 		"imgsrc": "assets/images/thermostat_thumb.png",
-		"title": "Thermostats",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+		"title": "Opower Thermostat",
+		"description": "Improving the mobile experience and utilizing behavioral science to reduce energy consumption",
   		"cta": "View Case Study",
-		"imgsrc": "assets/images/android_thermostat.png"
+		"imgsrc": "assets/images/thermostat_thumb.png"
 		}
 }
