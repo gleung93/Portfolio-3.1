@@ -7,8 +7,8 @@
 	
 .icon-bar
 	width: 22px
-	display: inline-block
 	transition: all 0.2s
+	
 
 .top-bar
 	-webkit-transform: rotate(45deg)
@@ -18,6 +18,8 @@
 	-webkit-transform-origin: 10% 10%
 	-ms-transform-origin: 10% 10%
 	transform-origin: 10% 10%
+	
+	-webkit-transform-style: preserve-3d;
     
 .middle-bar 
 	opacity: 0
@@ -31,14 +33,20 @@
 	-ms-transform-origin: 10% 90%
 	transform-origin: 10% 90%
 	
+	-webkit-transform-style: preserve-3d;
+	
 .navbar-toggle.collapsed
 	.top-bar
 		-webkit-transform: rotate(0)
 		-ms-transform: rotate(0)
 		transform: rotate(0)
+		
+		-webkit-transform-style: preserve-3d;
 	.middle-bar
 		opacity: 1
 	.bottom-bar
 		-webkit-transform: rotate(0)
 		-ms-transform: rotate(0)
 		transform: rotate(0)
+		
+		-webkit-transform-style: preserve-3d;
