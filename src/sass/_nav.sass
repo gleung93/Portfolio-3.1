@@ -4,25 +4,44 @@
 .navbar-inverse
 	border-color: #222
 	
+	
 .icon-bar
 	width: 22px
+	-webkit-transition: all 0.2s
+	-moz-transition: all 0.2s
+	-ms-transition: all 0.2s
+	-o-transition: all 0.2s
 	transition: all 0.2s
 
 .top-bar
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
 	transform: rotate(45deg)
+	
+	-webkit-transform-origin: 10% 10%
+	-ms-transform-origin: 10% 10%
 	transform-origin: 10% 10%
     
 .middle-bar 
 	opacity: 0
     
 .bottom-bar
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
 	transform: rotate(-45deg)
+	
+	-webkit-transform-origin: 10% 90%
+	-ms-transform-origin: 10% 90%
 	transform-origin: 10% 90%
 	
 .navbar-toggle.collapsed
 	.top-bar
+		-webkit-transform: rotate(0)
+		-ms-transform: rotate(0)
 		transform: rotate(0)
 	.middle-bar
 		opacity: 1
 	.bottom-bar
+		-webkit-transform: rotate(0)
+		-ms-transform: rotate(0)
 		transform: rotate(0)
