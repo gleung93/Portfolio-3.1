@@ -1,3 +1,4 @@
 {
-	"fade-top": "data-0=\"opacity:1;\" data-top=\"opacity:0;transform[bounce];\""
+	"fade-top": "data-0=\"opacity:1;\" data-top=\"opacity:0;transform[bounce];\"",
+	"bottom-fade-in": "data-0=\"opacity:0;\" data-20-bottom-top=\"opacity:1;transform[bounce];\""
 }

@@ -1,99 +1,37 @@
 <div class="container grid">
 <div class="row">
-<ul class="col-xs-12"> <!--This creates too0 much padding -->
+<ul class="col-xs-12"> <!--This creates too much padding -->
 	
-	<!--
-	<li>
-		<div class="col-xs-12">
-			<div class="card-large" style="background-image: url('{{ solar.imgsrc }}')">
-			<div class="black-overlay"></div>
-				<div class="col-md-8 col-md-offset-2 vertical-align">
-					<h2 class="text-center text-white">{{ solar.title }}</h2>
-					<h5 class="text-center text-white">{{ solar.description }}</h5>
-					<div class="text-center"><button type="button" class="btn btn-primary">{{ solar.cta }}</button></div>
+	{{#each projects}}
+		{{#if featured}}
+		<li {{ bottom-fade-in }} >
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="card-medium">
+					<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
+					<div class="card-text">
+						<h4 class="weight-medium">{{ title }}</h4>
+						<h5 class="weight-light">{{ description }}</h5>
+						<a><h5 class="weight-light ">{{ cta }}</h5></a>
+					</div
 				</div>
 			</div>
-		</div>
-	</li>
-	-->
-	
-	<li>
-		<div class="col-md-8 col-sm-12 col-xs-12">
-			<div class="card-medium">
-				<div class="card-medium-img" style="background-image: url('{{ solar.imgsrc }}')"></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ solar.title }}</h4>
-					<h5 class="weight-light">{{ solar.description }}</h5>
-					<a><h5 class="weight-light ">{{ thermostats.cta }}</h5></a>
-				</div
+		</li>	
+		{{else}}
+		<li {{ bottom-fade-in }} >
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="card">
+					<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
+					<div class="card-text">
+						<h4 class="weight-medium">{{ title }}</h4>
+						<h5 class="weight-light">{{ description }}</h5>
+						<a><h5 class="weight-light ">{{ cta }}</h5></a>
+					</div
+				</div>
 			</div>
-		</div>
-	</li>
-		
-	<li>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">
-				<div class="card-medium-img" style=""></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ thermostats.title }}</h4>
-					<h5 class="weight-light">{{ thermostats.description }}</h5>
-					<a><h5 class="weight-light ">{{ thermostats.cta }}</h5></a>
-				</div
-			</div>
-		</div>
-	</li>
-		
-	<li>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">
-				<div class="card-medium-img" style=""></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ thermostats.title }}</h4>
-					<h5 class="weight-light">{{ thermostats.description }}</h5>
-					<a><h5 class="weight-light ">{{ thermostats.cta }}</h5></a>
-				</div
-			</div>
-		</div>
-	</li>
-	
-	<li>
-		<div class="col-md-8 col-sm-12 col-xs-12">
-			<div class="card-medium">
-				<div class="card-medium-img" style="background-image: url('{{ thermostats.imgsrc }}')"></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ thermostats.title }}</h4>
-					<h5 class="weight-light">{{ thermostats.description }}</h5>
-					<a><h5 class="weight-light ">{{ thermostats.cta }}</h5></a>
-				</div
-			</div>
-		</div>
-	</li>
-		
-	<li>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">
-				<div class="card-medium-img" style=""></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ thermostats.title }}</h4>
-					<h5 class="weight-light">{{ thermostats.description }}</h5>
-					<a><h5 class="weight-light ">{{ thermostats.cta }}</h5></a>
-				</div
-			</div>
-		</div>
-	</li>
-	
-	<li>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="card">
-				<div class="card-medium-img" style=""></div>
-				<div class="card-text">
-					<h4 class="weight-medium">{{ thermostats.title }}</h4>
-					<h5 class="weight-light">{{ thermostats.description }}</h5>
-					<a><h5 class="weight-light">{{ thermostats.cta }}</h5></a>
-				</div
-			</div>
-		</div>
-	</li>
+		</li>
+		{{/if}}
+	{{/each}}
+
 </ul>
 </div>
 </div>
