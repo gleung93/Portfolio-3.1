@@ -1,50 +1,21 @@
-<section class="">
+<section class="about-section" style="background-image: url('{{ img-src }}')">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
-				<h2 class="thin text-center">SECTION-TITLE</h2>
-				<h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis.</h5>
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}">
+				<h2 class="thin text-center">{{ section-title }}</h2>
+				<h5 class="text-center">{{ sub-title }}</h5>
 			</div>
 		</div>
+		{{#if paragraph}}
 		<div class="row">
-			<div class="col-md-6 col-sm-11 col-xs-12">
-				<h4>Heading</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis. Cras sagittis lectus eu diam condimentum, a facilisis justo rutrum. Pellentesque ac euismod metus. Quisque hendrerit libero ut ipsum maximus, sit amet cursus massa lobortis.</p>
+			<div class="col-md-6 col-sm-11 col-xs-12 {{text-color}}">
+				<h4>{{ paragraph-heading }}</h4>
+				<p>{{ paragraph.body }}</p>
 			</div>
 		</div>
+		{{/if}}
 	</div>
-</section>
-
-<section class="diagonal">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
-				<h2 class="thin text-center">SECTION-TITLE</h2>
-				<h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis.</h5>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-sm-11 col-xs-12">
-				<h4>Heading</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis. Cras sagittis lectus eu diam condimentum, a facilisis justo rutrum. Pellentesque ac euismod metus. Quisque hendrerit libero ut ipsum maximus, sit amet cursus massa lobortis.</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
-				<h2 class="thin text-center">SECTION-TITLE</h2>
-				<h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis.</h5>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-sm-11 col-xs-12">
-				<h4>Heading</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar lobortis venenatis. Cras sagittis lectus eu diam condimentum, a facilisis justo rutrum. Pellentesque ac euismod metus. Quisque hendrerit libero ut ipsum maximus, sit amet cursus massa lobortis.</p>
-			</div>
-		</div>
-	</div>
+	{{#if gradient}}
+	<div class="gradient"></div>
+	{{/if}}
 </section>

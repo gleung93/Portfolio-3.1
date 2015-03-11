@@ -1,9 +1,23 @@
 {
-	"title": "Grant Leung",
-	"subtitle1": "Interaction Designer +",
-	"subtitle2": "Front-End Developer",
-	"first-heading": "WHO WE TALKED TO",
-	"first-paragraph": "We made sure to recruit a wide range of users from those who have only had panels on their roof for a few months to the experts who have had solar for over 4 years.",
-	"second-heading": "THE CUSTOMER JOURNEY",
-	"second-paragraph": "Based on the research, I assembled a customer journey map to better understand the context of how a user would experience PG&E's website."
+	"hero": {
+		"page-title": "Grant Leung",
+		"sub-title1": "UX / UI / Front-End",
+		"img-src": ""
+	},
+	"section1": {
+		"section-title": "Design School",
+		"sub-title": "In 2016 I earned a bachelor’s degree in Graphic Communication Design from the University of Cincinnati’s DAAP program.",
+		"img-src": "assets/images/daap2.png"
+	},
+	"section2": {
+		"section-title": "Experience",
+		"sub-title": "I have a year and a half of experience working in design in the San Francisco Bay Area.",
+		"img-src": "assets/images/sf.png",
+		"text-color": "text-white",
+		"paragraph": {
+			"heading": "UX INTERN | FALL 2013, SUMMER 2014",
+			"body":"User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation"
+		},
+		"gradient":"yes"
+	}
 }
