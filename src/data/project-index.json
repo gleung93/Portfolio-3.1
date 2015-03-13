@@ -1,6 +1,6 @@
 {
 	"hero": {
-		"title": "Projects"
+		"page-title": "Projects"
 		},
 		
 	"bottom-fade-in": "data-0=\"opacity:0;\" data-20-bottom-top=\"opacity:1;transform[bounce];\"",

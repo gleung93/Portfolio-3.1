@@ -9,8 +9,8 @@ module.exports = function(grunt) {
    			assets: "path/to/assets",
     		data:   "src/data/*.{json,yml}",
     		partials: "src/modules/*.hbs"
- 			},
- 			project: {
+ 			  },
+ 			  project: {
     			options: {
       				layout: "src/default-layout.hbs"
     			},
@@ -21,45 +21,28 @@ module.exports = function(grunt) {
           			dest: 'dist/'
    				}]
   			}
-		},
+		  },
 
-    	compass: {
-      		dist: {
-        		options: {
-         			environment: 'production',
-          			httpPath: 'dist/',
-          			cssDir: 'dist/assets/css',
-          			sassDir: 'src/sass',
-          			imagesDir: 'dist/assets/images',
-          			relativeAssets: true,
-          			outputStyle: 'compressed',
-          			importPath: ['bower_components']
-        		}
-      		}
-    	},
-    	
- 		vulcanize: {
-    		default: {
-      			options: {},
-      			files: {
-        			'dist/transition_build.html': 'src/polymer/nested.html'
-      			},
-    		},
-  		},
+      sass: {
+        dist: {
+          files: {
+            'dist/assets/css/leungportfolio.css': 'src/sass/leungportfolio.sass',
+            'dist/assets/css/bootstrap.css': 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss'
+          }
+        }
+      },
         
     	copy: {
-      		BootstrapCss: {
-        		src: 'bower_components/bootstrap/dist/css/bootstrap.css',
-        		dest: 'dist/assets/css/bootstrap.css',
-      		},    		
-      		 BootstrapCssMap: {
-        		src: 'bower_components/bootstrap/dist/css/bootstrap.css.map',
-        		dest: 'dist/assets/css/bootstrap.css.map',
+      		JQuery: {
+        		src: 'src/js/jquery.min.js',
+        		dest: 'dist/assets/js/jquery.min.js',
       		},
-      		BootstrapJs: {
-        		src: 'bower_components/bootstrap/dist/js/bootstrap.js',
-        		dest: 'dist/assets/js/bootstrap.js',
-      		},
+
+          BootstrapJs: {
+            src: 'bower_components/bootstrap/dist/js/bootstrap.js',
+            dest: 'dist/assets/js/bootstrap.js',
+          },
+
       		SkrollrJs: {
         		src: 'src/js/skrollr.min.js',
         		dest: 'dist/assets/js/skrollr.min.js',
@@ -73,15 +56,15 @@ module.exports = function(grunt) {
         		separator: ';'
       		},
       		dist: {
-        		src: ['src/js/*.js'],
-        		dest: 'dist/js/portfolio.js'
+        		src: ['src/js/general.js'],
+        		dest: 'dist/assets/js/portfolio.js'
       		},
    		},
         
     watch: {
       scripts: {
         files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
-        tasks: ["compass", "copy", 'assemble', 'concat'],
+        tasks: ['sass', 'assemble', 'copy', 'concat'],
         options: {
           spawn: false,
         },
@@ -90,11 +73,10 @@ module.exports = function(grunt) {
     });
     
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-vulcanize');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('assemble' );
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     
-    grunt.registerTask("build", ["compass", "copy", 'assemble', 'concat']);
+    grunt.registerTask("build", ['sass', 'assemble', 'copy', 'concat']);
 };
