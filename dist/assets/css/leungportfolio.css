@@ -5,7 +5,7 @@ html, body {
 h1 {
   font: 100% "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 5em;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     h1 {
@@ -20,7 +20,7 @@ h2 {
 h3 {
   font: 100% "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 1.4em;
+  font-size: 2em;
   text-transform: uppercase; }
 
 h4 {
@@ -38,8 +38,8 @@ h5 {
       font-weight: 300; } }
 
 p {
-  font: 100% "Lora", serif;
-  font-weight: 400;
+  font: 100% "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 1.2em;
   line-height: 27px; }
   @media (max-width: 768px) {
@@ -71,6 +71,11 @@ p {
   margin-right: auto;
   margin-left: auto; }
 
+.full-width-wrap {
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
 .black-overlay {
   position: absolute;
   top: 0;
@@ -87,6 +92,22 @@ p {
 .btn-primary:hover {
   background-color: #4F92A9; }
 
+.btn-default {
+  background-color: rgba(14, 183, 145, 0.2);
+  border-radius: 0px;
+  width: 100%;
+  color: white;
+  border: none;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+.btn-default:hover {
+  background-color: rgba(14, 183, 145, 0.5);
+  color: white; }
+
 body {
   background-color: #F4F4F4; }
 
@@ -99,14 +120,32 @@ body {
     .line-break {
       display: inline; } }
 
+Section {
+  padding-top: 20px;
+  padding-bottom: 100px; }
+
 .margin-bottom-20 {
   margin-bottom: 20px; }
+
+.margin-bottom-40 {
+  margin-bottom: 40px; }
 
 .navbar {
   margin-bottom: 0; }
 
 .navbar-inverse {
-  border-color: #222; }
+  border: none;
+  background-color: rgba(255, 255, 255, 0); }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white; }
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.8; }
+
+.navbar-inverse .navbar-brand {
+  color: white; }
 
 .navbar-toggle {
   border: none;
@@ -155,8 +194,18 @@ body {
   position: relative;
   background-color: #222;
   color: white;
-  height: 400px;
-  margin-top: -51px; }
+  height: 650px;
+  width: 100%;
+  margin-top: -51px;
+  background: #6ecfba;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZlY2ZiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MjgxN2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #6ecfba 0%, #42817c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6ecfba), color-stop(100%, #42817c));
+  background: -webkit-linear-gradient(top, #6ecfba 0%, #42817c 100%);
+  background: -o-linear-gradient(top, #6ecfba 0%, #42817c 100%);
+  background: -ms-linear-gradient(top, #6ecfba 0%, #42817c 100%);
+  background: linear-gradient(to bottom, #6ecfba 0%, #42817c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecfba', endColorstr='#42817c',GradientType=0 ); }
 
 .arrow-circle {
   position: absolute;
@@ -213,54 +262,40 @@ li {
   min-height: 800px;
   padding-top: 40px; }
 
-.gradient {
-  position: absolute;
-  bottom: 0px;
-  height: 200px;
-  width: 100%;
-  background: -moz-linear-gradient(top, transparent 0%, black 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, black));
-  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
-  background: -o-linear-gradient(top, transparent 0%, black 100%);
-  background: -ms-linear-gradient(top, transparent 0%, black 100%);
-  background: linear-gradient(to bottom, transparent 0%, black 100%); }
-
-.diagonal {
+/*.gradient
+ * position: absolute
+ * bottom: 0px
+ * height: 200px
+ * width: 100%
+ * background: rgb(110,207,186)
+ * background: -moz-linear-gradient(top,  rgba(110,207,186,1) 0%, rgba(66,129,124,1) 100%)
+ * background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(110,207,186,1)), color-stop(100%,rgba(66,129,124,1)))
+ * background: -webkit-linear-gradient(top,  rgba(110,207,186,1) 0%,rgba(66,129,124,1) 100%)
+ * background: -o-linear-gradient(top,  rgba(110,207,186,1) 0%,rgba(66,129,124,1) 100%)
+ * background: -ms-linear-gradient(top,  rgba(110,207,186,1) 0%,rgba(66,129,124,1) 100%)
+ * background: linear-gradient(to bottom,  rgba(110,207,186,1) 0%,rgba(66,129,124,1) 100%)
+ * filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecfba', endColorstr='#42817c',GradientType=0 ) */
+.skill-container {
   position: relative;
-  margin-top: 34px;
-  margin-bottom: 50px;
-  padding-bottom: 50px; }
+  height: 195px; }
 
-.diagonal:before {
-  content: "";
+.skill-circle {
   position: absolute;
   left: 0;
-  top: -34px;
-  width: 100%;
-  height: 65px;
-  -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
-  -webkit-transform-style: preserve-3d; }
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(14, 183, 145, 0.6);
+  border-radius: 50%;
+  -webkit-transition: width 0.5s, height 0.5s, bottom 0.5s;
+  transition: width 0.5s, height 0.5s, bottom 0.5s; }
 
-.diagonal:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -34px;
-  width: 100%;
-  height: 65px;
-  background-image: url("../images/daap.png");
-  background-size: cover;
-  background-position: center;
-  -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
-  -webkit-transform-style: preserve-3d; }
+.skill-circle:hover {
+  height: 165px;
+  width: 165px;
+  bottom: 30px;
+  background-color: #0eb791; }
 
 .big-block {
   height: 800px;
