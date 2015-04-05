@@ -1,11 +1,16 @@
 <section class="full-width-wrap" style="background-image: url('{{ imgsrc }}')">
 	<div class="container text-white">
-		<h4 class="text-center margin-bottom-40"> {{title}} </h4>
+		<h4 class="text-center margin-bottom-40" id="dummy"> {{title}} </h4>
 		<div class="col-lg-5">
 			<div class="skill-container">
-				<div class="skill-circle center-block">
+				<div onmouseover="distributeUxSkills()" onmouseout="hideUxSkills()" class="skill-circle center-block" id="uxskills">
 					<img src="{{icon1}}" class="center-block vertical-align">
 				</div>
+				{{#each ux-skill}}
+					<div class="skillux">
+						<p class="caption text-center">{{this}}</p>
+					</div>
+				{{/each}}
 			</div>
 			<h3> {{col1-heading}} </h3>
 			<p> {{col1-body}} </p>
@@ -13,9 +18,14 @@
 		</div>
 		<div class="col-lg-5 col-lg-offset-2">
 			<div class="skill-container">
-				<div class="skill-circle center-block">
-					<img src="{{icon2}}" class="center-block vertical-align">
+				<div onmouseover="distributeDevSkills()" onmouseout="hideDevSkills()" class="skill-circle center-block" id="devskills">
+					<img src="{{icon1}}" class="center-block vertical-align">
 				</div>
+				{{#each dev-skill}}
+					<div class="skilldev">
+						<p class="caption text-center">{{this}}</p>
+					</div>
+				{{/each}}
 			</div>
 			<h3> {{col2-heading}} </h3>
 			<p> {{col2-body}} </p>

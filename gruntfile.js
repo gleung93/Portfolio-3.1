@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         		separator: ';'
       		},
       		dist: {
-        		src: ['src/js/general.js'],
+        		src: ['src/js/*.js'],
         		dest: 'dist/assets/js/portfolio.js'
       		},
    		},
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
-        tasks: ['sass', 'assemble', 'copy', 'concat'],
+        tasks: ['sass', 'assemble','concat', 'copy'],
         options: {
           spawn: false,
         },
@@ -78,5 +78,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('assemble');
     grunt.loadNpmTasks('grunt-contrib-sass');
     
-    grunt.registerTask("build", ['sass', 'assemble', 'copy', 'concat']);
+    grunt.registerTask("build", ['sass', 'assemble', 'concat', 'copy']);
 };

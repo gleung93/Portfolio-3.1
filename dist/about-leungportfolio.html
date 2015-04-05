@@ -14,9 +14,10 @@
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
         <!--<script src="assets/js/skrollr.min.js"></script>-->
         <script src="assets/js/velocity.min.js"></script>
+        <script src="assets/js/portfolio.js"></script>
+        <script src="assets/js/skill-spokes.js"></script>
         
     </head>
         
@@ -60,12 +61,37 @@
 
 <section class="full-width-wrap" style="background-image: url('assets/images/polygon.jpg')">
 	<div class="container text-white">
-		<h4 class="text-center margin-bottom-40"> What I Do </h4>
+		<h4 class="text-center margin-bottom-40" id="dummy"> What I Do </h4>
 		<div class="col-lg-5">
 			<div class="skill-container">
-				<div class="skill-circle center-block">
+				<div onmouseover="distributeUxSkills()" onmouseout="hideUxSkills()" class="skill-circle center-block" id="uxskills">
 					<img src="assets/images/ux_icon.png" class="center-block vertical-align">
 				</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">Wireframing</p>
+					</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">Visual Design</p>
+					</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">Research</p>
+					</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">User Testing</p>
+					</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">Information Architecture</p>
+					</div>
+				
+					<div class="skillux">
+						<p class="caption text-center">Interaction Design</p>
+					</div>
+				
 			</div>
 			<h3> User Experience Design </h3>
 			<p> From conepts to wireframes to pixel-perfect interfaces, I utlitize user centered design principles to create beautiful digital products that are easy to use and engaging. </p>
@@ -73,9 +99,26 @@
 		</div>
 		<div class="col-lg-5 col-lg-offset-2">
 			<div class="skill-container">
-				<div class="skill-circle center-block">
-					<img src="assets/images/dev_icon.png" class="center-block vertical-align">
+				<div onmouseover="distributeDevSkills()" onmouseout="hideDevSkills()" class="skill-circle center-block" id="devskills">
+					<img src="assets/images/ux_icon.png" class="center-block vertical-align">
 				</div>
+				
+					<div class="skilldev">
+						<p class="caption text-center">HTML</p>
+					</div>
+				
+					<div class="skilldev">
+						<p class="caption text-center">CSS</p>
+					</div>
+				
+					<div class="skilldev">
+						<p class="caption text-center">JavaScript</p>
+					</div>
+				
+					<div class="skilldev">
+						<p class="caption text-center">Agile Methodologies</p>
+					</div>
+				
 			</div>
 			<h3> Front-End Developement </h3>
 			<p> I have the ability to make my designs a reality in code. My focus has been on static web developement but I’m in the process of learning ios and android developement. </p>
