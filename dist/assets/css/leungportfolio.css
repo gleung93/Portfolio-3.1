@@ -98,15 +98,16 @@ p {
 
 .btn-default {
   background-color: rgba(14, 183, 145, 0.2);
+  font-size: 1.2em;
+  font-weight: 100;
   border-radius: 0px;
   width: 100%;
   color: white;
   border: none;
-  -o-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .btn-default:hover {
   background-color: rgba(14, 183, 145, 0.5);
@@ -124,8 +125,8 @@ body {
     .line-break {
       display: inline; } }
 
-Section {
-  padding-top: 20px;
+section {
+  padding-top: 50px;
   padding-bottom: 100px; }
 
 .margin-bottom-20 {
@@ -133,6 +134,9 @@ Section {
 
 .margin-bottom-40 {
   margin-bottom: 40px; }
+
+.margin-bottom-60 {
+  margin-bottom: 60px; }
 
 .navbar {
   margin-bottom: 0; }
@@ -213,19 +217,21 @@ Section {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecfba', endColorstr='#42817c',GradientType=0 ); }
 
 .arrow-circle {
-  position: absolute;
-  left: 0;
-  right: 0;
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #F4F4F4;
-  bottom: -30px; }
+  background-color: #F4F4F4; }
 
 .arrow-down {
   width: 60px;
   height: 60px;
   padding: 12px; }
+
+.more {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -130px; }
 
 .grid {
   margin-top: 20px; }
@@ -287,9 +293,10 @@ li {
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
-  margin-bottom: 40px; }
+  margin-bottom: 50px;
+  margin-top: 60px; }
 
-.skillux {
+.skill {
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -301,26 +308,7 @@ li {
   transition: all 0.5s ease;
   opacity: 0; }
 
-.skillux p {
-  position: absolute;
-  width: 93px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.skilldev {
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  opacity: 0; }
-
-.skilldev p {
+.skill p {
   position: absolute;
   width: 93px;
   top: 50%;
@@ -337,14 +325,29 @@ li {
   width: 150px;
   background-color: rgba(14, 183, 145, 0.6);
   border-radius: 50%;
-  -webkit-transition: width 0.5s, height 0.5s, bottom 0.5s;
-  transition: width 0.5s, height 0.5s, bottom 0.5s; }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-backface-visibility: hidden; }
 
 .skill-circle:hover {
   height: 165px;
   width: 165px;
   bottom: 30px;
   background-color: #0eb791; }
+
+.plus {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 270px;
+  opacity: 0.6; }
+  @media (max-width: 992px) {
+    .plus {
+      visibility: hidden; } }
 
 .big-block {
   height: 800px;

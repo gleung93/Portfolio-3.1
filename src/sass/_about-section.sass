@@ -26,10 +26,11 @@
 	margin-left: auto
 	margin-right: auto
 	overflow: visible
-	margin-bottom: 40px
+	margin-bottom: 50px
+	margin-top: 60px
 
 
-.skillux
+.skill
 	position: absolute
 	z-index: 0
 	top: 50%
@@ -41,26 +42,7 @@
 	transition: all 0.5s ease
 	opacity: 0
 
-.skillux p
-	position: absolute
-	width: 93px
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
-
-.skilldev
-	position: absolute
-	z-index: 0
-	top: 50%
-	left: 50%
-	transform: translate(-50%, -50%)
-	-webkit-transition: all 0.5s ease
-	-moz-transition: all 0.5s ease
-	-o-transition: all 0.5s ease
-	transition: all 0.5s ease
-	opacity: 0
-
-.skilldev p
+.skill p
 	position: absolute
 	width: 93px
 	top: 50%
@@ -77,11 +59,25 @@
 	width: 150px
 	background-color: rgba(14,183,145,.6)
 	border-radius: 50%
-	-webkit-transition: width .5s, height .5s, bottom .5s
-	transition: width .5s, height .5s, bottom .5s
+	-webkit-transition: all 0.5s ease
+	-moz-transition: all 0.5s ease
+	-o-transition: all 0.5s ease
+	transition: all 0.5s ease
+	-webkit-backface-visibility: hidden
 
 .skill-circle:hover
 	height: 165px
 	width: 165px
 	bottom: 30px
 	background-color: rgba(14,183,145,1)
+
+.plus
+	position: absolute
+	margin-left: auto
+	margin-right: auto
+	left: 0
+	right: 0
+	top: 270px
+	opacity: .6
+	@media (max-width: 992px)
+		visibility: hidden

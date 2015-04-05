@@ -1,35 +1,44 @@
 <section class="full-width-wrap" style="background-image: url('{{ imgsrc }}')">
-	<div class="container text-white">
-		<h4 class="text-center margin-bottom-40" id="dummy"> {{title}} </h4>
-		<div class="col-lg-5">
+	<div class="container text-white" style="position:relative">
+		<h3 class="text-center margin-bottom-40"> {{title}} </h3>
+		<h3 class="text-center plus">+</h3>
+
+		<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 margin-bottom-60">
 			<div class="skill-container">
-				<div onmouseover="distributeUxSkills()" onmouseout="hideUxSkills()" class="skill-circle center-block" id="uxskills">
+				<div class="skill-circle center-block">
 					<img src="{{icon1}}" class="center-block vertical-align">
 				</div>
 				{{#each ux-skill}}
-					<div class="skillux">
+					<div class="skill">
 						<p class="caption text-center">{{this}}</p>
 					</div>
 				{{/each}}
 			</div>
 			<h3> {{col1-heading}} </h3>
 			<p> {{col1-body}} </p>
-			<button type="button" class="btn btn-default"> {{CTA}}</button>
+			<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i> </button>
 		</div>
-		<div class="col-lg-5 col-lg-offset-2">
+
+		<div class="col-md-5 col-md-offset-2 col-sm-10 col-sm-offset-1 margin-bottom-60 ">
 			<div class="skill-container">
-				<div onmouseover="distributeDevSkills()" onmouseout="hideDevSkills()" class="skill-circle center-block" id="devskills">
-					<img src="{{icon1}}" class="center-block vertical-align">
+				<div class="skill-circle center-block">
+					<img src="{{icon2}}" class="center-block vertical-align">
 				</div>
 				{{#each dev-skill}}
-					<div class="skilldev">
+					<div class="skill">
 						<p class="caption text-center">{{this}}</p>
 					</div>
 				{{/each}}
 			</div>
 			<h3> {{col2-heading}} </h3>
 			<p> {{col2-body}} </p>
-			<button type="button" class="btn btn-default"> {{CTA}}</button>
+			<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i></button>
 		</div>
+		<div class="more">
+			<p class="text-center">more about me</p>
+			<div class="arrow-circle center">
+				<img class="arrow-down center" src="assets/images/down_arrow.svg">
+			</div>
+		<div>
 	</div>
 </section>
