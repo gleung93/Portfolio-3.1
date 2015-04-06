@@ -6,6 +6,13 @@ $gray: #232323
 	-webkit-transform: translateY(-50%)
 	-ms-transform: translateY(-50%)
 	transform: translateY(-50%)
+
+.vertical-align-absolute
+	position: absolute
+	top: 50%
+	-webkit-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	transform: translateY(-50%)
 	
 .center
 	margin-right: auto
@@ -14,7 +21,7 @@ $gray: #232323
 .full-width-wrap
 	width: 100%
 	background-size: cover
-	background-position: center
+	background-position: center top
 	
 .black-overlay
 	position: absolute
@@ -24,7 +31,10 @@ $gray: #232323
 	height: 100%
 	background-color: black
 	opacity: .45
-	
+
+.white-bg
+	background-color: white
+
 .btn-primary
 	background-color: $primary-blue
 	border: none
@@ -63,6 +73,9 @@ body
 section
 	padding-top: 50px
 	padding-bottom: 100px
+
+.margin-top-50
+	margin-top: 50px
 
 .margin-bottom-20
 	margin-bottom: 20px

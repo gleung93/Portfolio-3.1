@@ -1,9 +1,9 @@
-<section class="about-section" style="background-image: url('{{ img-src }}')">
+<section class="full-width-wrap white-bg no-padding">
 	<div class="container">
-		<div class="row">
+		<div class="row margin-top-50">
 			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}">
-				<h2 class="thin text-center">{{ section-title }}</h2>
-				<h5 class="text-center">{{ sub-title }}</h5>
+				<h2 class="weight-thin text-center">{{ section-title }}</h2>
+				<h5 class="weight-thin text-center">{{ sub-title }}</h5>
 			</div>
 		</div>
 		{{#if paragraph}}
@@ -15,6 +15,7 @@
 		</div>
 		{{/if}}
 	</div>
+	<img class="img-responsive" src="{{ img-src }}">
 	{{#if gradient}}
 	<div class="gradient"></div>
 	{{/if}}

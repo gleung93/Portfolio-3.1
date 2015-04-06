@@ -15,10 +15,11 @@
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.js"></script>
-        <!--<script src="assets/js/skrollr.min.js"></script>-->
         <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
         <script src="assets/js/skill-spokes.js"></script>
+        <script src="assets/js/animated-gradient.js"></script>
+
         
     </head>
         
@@ -48,19 +49,22 @@
 </nav>
     
     	
-
-<div class="hero">
-	<div class="container vertical-align">
+<div class="parallax">
+<div class="parallax__group">
+<div class="hero parallax__layer parallax__layer--back">
+	<div class="container vertical-align-absolute">
 		<div class="row">
-			<h1 class="">Building Digital Experiences</h1>
+			<h1 class="col-xs-12">Building Digital Experiences</h1>
 		</div>
 		<div class="row">
-			<h3 class=""><span class="line-break">Product Designer/Developer</span><span class="line-break"> </span></h3>
+			<h3 class="col-xs-12"><span class="line-break">Product Designer/Developer</span><span class="line-break"> </span></h3>
 		</div>
 	</div>
 </div>
+</div>
 
-<section class="full-width-wrap" style="background-image: url('assets/images/polygon.jpg')">
+<div id="slide-2" class="parallax__group">
+<section class="full-width-wrap parallax__layer parallax__layer--base" style="background-image: url('assets/images/polygon.jpg')">
 	<div class="container text-white" style="position:relative">
 		<h3 class="text-center margin-bottom-40"> What I Do </h3>
 		<h3 class="text-center plus">+</h3>
@@ -136,18 +140,38 @@
 		<div>
 	</div>
 </section>
-<section class="about-section" style="background-image: url('assets/images/daap2.png')">
+</div>
+<section class="full-width-wrap white-bg no-padding">
+	<div class="container">
+		<div class="row margin-top-50">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 ">
+				<h2 class="weight-thin text-center">Design School</h2>
+				<h5 class="weight-thin text-center">I’m in my 4th year at the University of Cincinnati’s  DAAP Program earning a degree in Graphic comunication design. I’m on track to graduation in spring of 2016.</h5>
+			</div>
+		</div>
+		
+	</div>
+	<img class="img-responsive" src="assets/images/daap3.png">
+	
+</section>
+
+<section class="full-width-wrap white-bg" style="background-image: url('assets/images/sf.png')">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 ">
-				<h2 class="thin text-center">Design School</h2>
-				<h5 class="text-center">In 2016 I earned a bachelor’s degree in Graphic Communication Design from the University of Cincinnati’s DAAP program.</h5>
+			<div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 text-white">
+				<h2 class="weight-thin text-center">Experience</h2>
+				<h5 class="weight-thin text-center">I over a year of experience working in design in the San Francisco Bay Area.</h5>
 			</div>
 		</div>
 		
 	</div>
 	
+	<div class="gradient"></div>
+	
 </section>
 
+</div>
+        
+        <script src="assets/js/skrollr.min.js"></script>
     </body>
 </html>
