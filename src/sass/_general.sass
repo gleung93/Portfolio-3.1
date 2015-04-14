@@ -6,12 +6,17 @@ $gray: #232323
 	-webkit-transform: translateY(-50%)
 	-ms-transform: translateY(-50%)
 	transform: translateY(-50%)
+
+.parallax
+	position: relative
+	top: 50%
 	
 .center
 	margin-right: auto
 	margin-left: auto
 
 .full-width-wrap
+	position: relative
 	width: 100%
 	background-size: cover
 	background-position: center top
@@ -27,13 +32,6 @@ $gray: #232323
 
 .white-bg
 	background-color: white
-
-.btn-primary
-	background-color: $primary-blue
-	border: none
-	
-.btn-primary:hover
-	background-color: $primary-blue-hover
 
 .btn-default
 	background-color: $primary-green
@@ -51,7 +49,28 @@ $gray: #232323
 .btn-default:hover
 	background-color: $primary-green-hover
 	color: white
+
+.btn-primary
+	background: none
+	padding: 0
+	text-align: left
+	font-size: 1.2em
+	font-weight: 400
+	border-radius: 0px
+	width: 100%
+	color: $primary-green-hover
+	border: none
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	-o-transition: all 0.3s ease
+	transition: all 0.3s ease
 	
+.btn-primary:hover
+	opacity: .9
+	color: $primary-green-hover
+	background: none
+	
+
 body
 	background-color: $background-gray
 	

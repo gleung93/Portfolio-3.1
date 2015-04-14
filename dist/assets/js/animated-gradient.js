@@ -1,8 +1,3 @@
-/*
-$(document).ready(function() {
-  $('.hero').css('height', $(window).height() + 'px');
-});
-*/
 var colors = new Array(
   [106,207,184],
   [90,129,124],

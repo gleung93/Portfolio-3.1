@@ -1,0 +1,55 @@
+<section class="full-width-wrap white-bg no-padding">
+	<div class="container">
+		<div class="row margin-top-50">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}">
+				<h2 class="weight-thin text-center">{{ section-title }}</h2>
+				<h5 class="weight-thin text-center">{{ sub-title }}</h5>
+			</div>
+		</div>
+		{{#if paragraph}}
+		<div class="row">
+			<div class="col-md-6 col-sm-11 col-xs-12 {{text-color}}">
+				<h4>{{ paragraph-heading }}</h4>
+				<p>{{ paragraph.body }}</p>
+			</div>
+		</div>
+		{{/if}}
+		<!--Write an each statement-->
+		<div class="row energy-row">
+			<div class="col-md-2">
+				<img class="company-logo center-block" src="{{ company1.logo }}">
+			</div>
+			<div class="col-md-6">
+				<h3>{{ company1.heading }}</h3>
+				<p>{{ company1.body }}</p>
+				<button type="button" class="btn btn-primary"> {{company1.CTA}} <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+
+		<div class="row energy-row">
+			<div class="col-md-2">
+				<img class="company-logo center-block" src="{{ company2.logo }}">
+			</div>
+			<div class="col-md-6">
+				<h3>{{ company2.heading }}</h3>
+				<p>{{ company2.body }}</p>
+				<button type="button" class="btn btn-primary"> {{company2.CTA}} <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+
+		<div class="row energy-row">
+			<div class="col-md-2">
+				<img class="company-logo center-block" src="{{ company3.logo }}">
+			</div>
+			<div class="col-md-6">
+				<h3>{{ company3.heading }}</h3>
+				<p>{{ company3.body }}</p>
+				<button type="button" class="btn btn-primary"> {{company3.CTA}} <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+
+	</div>
+	{{#if gradient}}
+	<div class="gradient"></div>
+	{{/if}}
+</section>
