@@ -1,3 +1,7 @@
+$(function() {
+  $('#below').css('margin-top', $('#hero').outerHeight());
+});
+
 var colors = new Array(
   [106,207,184],
   [90,129,124],
@@ -36,7 +40,7 @@ var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
 var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
 var color2 = "rgb("+r2+","+g2+","+b2+")";
 
- $('#gradient').css({
+ $('.gradient-animate').css({
    background: "-webkit-gradient(linear, left top, left bottom, from("+color1+"), to("+color2+"))"}).css({
     background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
   

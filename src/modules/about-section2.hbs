@@ -18,13 +18,13 @@
 	<div class="selector-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo1">
 					<img class="center-block experience_logo" src="assets/images/sequence_logo.svg">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo2">
 					<img class="center-block experience_logo" src="assets/images/opower_logo.svg">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo3">
 					<img class="center-block experience_logo" src="assets/images/greenstart_logo.svg">
 				</div>
 			</div>
@@ -32,10 +32,22 @@
 		<div class="triangle-up"></div>
 	</div>
 	<div class="container text-white">
-		<div class="row">
+		<div class="row" id="experience-text1">
 			<div class="col-md-6">
-				<h3>User Experience Design Intern @Opower</h3>
-				<p>User Experience design work that utilizes behavioral science in order to encourage people to use less energy. The work spanned many different channels including, mobile, web, email and paper. Responsibilities included user research, wireframing, prototyping, user testing, and documentation.</p>
+				<h3>{{ job1.heading }}</h3>
+				<p>{{ job1.body }}</p>
+			</div>
+		</div>
+		<div class="row" id="experience-text2">
+			<div class="col-md-6">
+				<h3>{{ job2.heading }}</h3>
+				<p>{{ job2.body }}</p>
+			</div>
+		</div>
+		<div class="row" id="experience-text3">
+			<div class="col-md-6">
+				<h3>{{ job3.heading }}</h3>
+				<p>{{ job3.body }}</p>
 			</div>
 		</div>
 	</div>

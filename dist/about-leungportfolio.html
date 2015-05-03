@@ -19,11 +19,7 @@
         <script src="assets/js/portfolio.js"></script>
         <script src="assets/js/skill-spokes.js"></script>
         <script src="assets/js/animated-gradient.js"></script>
-        <script>
-            $(function() {
-                $('#below').css('margin-top', $('#hero').outerHeight());
-            });
-        </script>
+        <script src="assets/js/experience_selector.js"></script>
 
         
     </head>
@@ -55,13 +51,13 @@
     
     	
 
-<div id="hero" class="hero">
-	<div class="container vertical-align" data-0="transform: translateY(-50%);" data-1000="transform: translateY(-200%)">
+<div id="hero" class="hero gradient-animate"data-0="display:block;"  data-1000="display:none;">
+	<div class="container vertical-align" data-0="opacity:1; transform: translate3d(0,-50%,0);" data-1000="opacity:0; transform: translate3d(0,-200%,0)">
 		<div class="row">
 			<h1 class="col-xs-12">Building Digital Experiences</h1>
 		</div>
 		<div class="row">
-			<h3 class="col-xs-12"><span class="line-break">Product Designer/Developer</span><span class="line-break"> </span></h3>
+			<h3 class="col-xs-12"><span class="line-break">The 2015 porfolio of Grant Leung</span><span class="line-break"> </span></h3>
 		</div>
 	</div>
 </div>
@@ -169,13 +165,13 @@
 	<div class="selector-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo1">
 					<img class="center-block experience_logo" src="assets/images/sequence_logo.svg">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo2">
 					<img class="center-block experience_logo" src="assets/images/opower_logo.svg">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" id="experience-logo3">
 					<img class="center-block experience_logo" src="assets/images/greenstart_logo.svg">
 				</div>
 			</div>
@@ -183,17 +179,29 @@
 		<div class="triangle-up"></div>
 	</div>
 	<div class="container text-white">
-		<div class="row">
+		<div class="row" id="experience-text1">
 			<div class="col-md-6">
-				<h3>User Experience Design Intern @Opower</h3>
-				<p>User Experience design work that utilizes behavioral science in order to encourage people to use less energy. The work spanned many different channels including, mobile, web, email and paper. Responsibilities included user research, wireframing, prototyping, user testing, and documentation.</p>
+				<h3>UX INTERN | SPRING 2014</h3>
+				<p>User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation</p>
+			</div>
+		</div>
+		<div class="row" id="experience-text2">
+			<div class="col-md-6">
+				<h3>UX INTERN | FALL 2013, SUMMER 2014</h3>
+				<p>User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation</p>
+			</div>
+		</div>
+		<div class="row" id="experience-text3">
+			<div class="col-md-6">
+				<h3>DESIGN INTERN | SPRING 2013</h3>
+				<p>User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation</p>
 			</div>
 		</div>
 	</div>
 	<div class="gradient"></div>
 </section>
 
-<section class="full-width-wrap white-bg no-padding">
+<section class="full-width-wrap white-bg no-padding padding-bottom-60">
 	<div class="container">
 		<div class="row margin-top-50">
 			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 ">
@@ -203,6 +211,7 @@
 		</div>
 		
 		<!--Write an each statement-->
+		
 		<div class="row energy-row">
 			<div class="col-md-2">
 				<img class="company-logo center-block" src="assets/images/chevron_logo.png">
@@ -213,7 +222,7 @@
 				<button type="button" class="btn btn-primary"> View Project <i class="fa fa-arrow-right"></i> </button>
 			</div>
 		</div>
-
+		
 		<div class="row energy-row">
 			<div class="col-md-2">
 				<img class="company-logo center-block" src="assets/images/pge_logo.png">
@@ -224,7 +233,7 @@
 				<button type="button" class="btn btn-primary"> View Project <i class="fa fa-arrow-right"></i> </button>
 			</div>
 		</div>
-
+		
 		<div class="row energy-row">
 			<div class="col-md-2">
 				<img class="company-logo center-block" src="assets/images/genability_logo.png">
@@ -235,8 +244,24 @@
 				<button type="button" class="btn btn-primary"> View Project <i class="fa fa-arrow-right"></i> </button>
 			</div>
 		</div>
-
+		
+		
 	</div>
+	
+</section>
+
+<section class="full-width-wrap white-bg no-padding">
+	<div class="container overlayed-title">
+		<div class="row margin-top-50">
+			<div class="col-md-5 col-md-offset-3 col-sm-12 col-sm-offset-0 text-white">
+				<h2 class="weight-thin text-center">Adventure</h2>
+				<h5 class="weight-thin text-center">This is how I like to spend my weekends</h5>
+				<button type="button" class="btn btn-default"> See Where I&#x27;ve Been <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+		
+	</div>
+	<img class="img-responsive" src="assets/images/castle_rock.jpg">
 	
 </section>
 

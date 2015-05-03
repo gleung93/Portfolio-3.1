@@ -1,0 +1,24 @@
+<section class="full-width-wrap white-bg no-padding">
+	<div class="container overlayed-title">
+		<div class="row margin-top-50">
+			<div class="col-md-5 col-md-offset-3 col-sm-12 col-sm-offset-0 {{text-color}}">
+				<h2 class="weight-thin text-center">{{ section-title }}</h2>
+				<h5 class="weight-thin text-center">{{ sub-title }}</h5>
+				<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+		{{#if paragraph}}
+		<div class="row">
+			<div class="col-md-6 col-sm-11 col-xs-12 {{text-color}}">
+				<h4>{{ paragraph-heading }}</h4>
+				<p>{{ paragraph.body }}</p>
+				<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i> </button>
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	<img class="img-responsive" src="{{ img-src }}">
+	{{#if gradient}}
+	<div class="gradient"></div>
+	{{/if}}
+</section>
