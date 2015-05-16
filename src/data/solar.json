@@ -1,0 +1,43 @@
+{
+	"hero": {
+		"page-title": "PG&E Solar Dashboard",
+		"sub-title1": "UX / WEB DESIGN / OPOWER",
+		"img-src": "assets/images/solar_hero.png"
+	},
+	"overview": {
+		"about-title": "About the project",
+		"about-body": "The Solar Dashboard is an interactive online experience to help Pacific Gas and Electric’s solar customers track and understand their electricity bill.",
+		"role-title": "My role",
+		"role-body": "I led the design of this project with oversight from David Royer, Senior UX Designer at Opower. I was responsible for all phases of the design process including; research, wireframing, user testing, visual design and documentation.",
+		"CTA": "Read the Case Study"
+	},
+	"intro": {
+		"title": "Billing for solar customers works differently.",
+		"body1": "Utility bills can be confusing. This is epecially true for Pacific Gas and Electric (PG&E) customers who own solar panels. Their billing works differently than most because they pay for their electricity usage just once a year instead of every month.",
+		"body2": "Our goal was to create a unique online experience for these users to help increase customer satisfaction and reduce call center costs related to bill confusion"
+	},
+	"current-experience": {
+		"sub-heading": "Understanding the current experience",
+		"body": "To gain an understanding of the current experience for solar customers I conducted an audit of PGE's webite as well as the  paper statements customers recieve in the mail each month.",
+		"img-src": "assets/images/reports.png",
+		"conclusion": "I found that there was a large disconnect between the information a user sees online and what they get in the mail."
+	},
+	"user-research": {
+		"sub-heading": "User Research",
+		"body": "I worked with the Opower Research team to recruit and interview 6 real PG&E solar customer in order understand how they think about their bill",
+		"icon-src": "assets/images/user_icon.png",
+		"img-src": "assets/images/opower_research.png",
+		"conclusion": "Based on the research, I assembled a customer journey map to better understand the context of how a user would experience PG&E’s website.",
+		"placeholder": "assets/images/placeholder.png"
+	},
+	"sketching": {
+		"sub-heading": "Sketching & Internal Critique",
+		"body": "Using what I learned from the research I started an interative process of sketching starting with user flows and moving into higher fidelity wireframes. During this process I held work/critique sessions with the Opower UX team.",
+		"img-src-below": "assets/images/solar_sketches.png"
+	},
+	"prototyping": {
+		"sub-heading": "Prototyping using Invision",
+		"body": "From my wireframes I created high fidelity prototypes with limited interactivity. Since clear communication was essential to the success of this design, I wanted to test with proper visual hierarchy",
+		"img-src": "assets/images/invision.png"
+	}
+}

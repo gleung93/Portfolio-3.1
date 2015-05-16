@@ -1,5 +1,5 @@
 $(function() {
-  $('#below').css('margin-top', $('#hero').outerHeight());
+  $('#below').css('margin-top', $('#landing').outerHeight());
 });
 
 var colors = new Array(

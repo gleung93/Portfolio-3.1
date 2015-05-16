@@ -1,0 +1,34 @@
+<section class="image-right">
+	<div class="container">
+		<div class="row">
+			{{#if img-src}}
+			<div class="col-md-5">
+				<h3>{{ sub-heading }}</h3>
+				<p>{{ body }} </p>
+			</div>
+			<div class="col-md-5 col-md-offset-1 right-image">
+				<img src="{{ img-src }}">
+			</div>
+			{{else}}
+			<div class="col-md-7">
+				<h3>{{ sub-heading }}</h3>
+				<p>{{ body }} </p>
+			</div>
+			{{/if}}
+		</div>
+		{{#if conclusion }}
+		<div class="row conclusion">
+			<div class="col-md-8 col-md-offset-2">
+				<h4 class="weight-thin text-center">{{ conclusion }}</h3>
+			</div>
+		</div>
+		{{/if}}
+		{{#if img-src-below }}
+		<div class=" below-image row">
+			<div class="col-md-12">
+				<img class="center-block" src="{{ img-src-below }}">
+			</div>
+		</div>
+		{{/if}}
+	</div>
+</section>
