@@ -20,7 +20,18 @@ module.exports = function(grunt) {
           			src: ['*.hbs'],
           			dest: 'dist/'
    				}]
-  			}
+  			},
+        grid: {
+          options: {
+              layout: "src/grid-layout.hbs"
+          },
+          files: [{
+              expand: true,
+              cwd: 'src/pages',
+                src: ['projects.hbs'],
+                dest: 'dist/'
+          }]
+        },
 		  },
 
       sass: {

@@ -1,16 +1,18 @@
 {
 	"hero": {
 		"page-title": "Building Digital Experiences",
-		"sub-title1": "The 2015 porfolio of Grant Leung",
-		"img-src": ""
+		"sub-title1": "The 2015 porfolio of Grant Leung"
 	},
 	"section-what-do": {
-		"imgsrc": "assets/images/polygon.jpg",
+		"imgsrc": "assets/images/index/polygon.png",
 		"title": "What I Do",
-		"icon1": "assets/images/ux_icon.png",
+		"icon1": "assets/images/index/ux_icon.png",
 		"col1-heading": "User Experience Design",
 		"col1-body": "From conepts to wireframes to pixel-perfect interfaces, I utlitize user centered design principles to create beautiful digital products that are easy to use and engaging.",
-		"CTA": "View Example",
+		"CTA1": "View Example",
+		"link1":"solar.html",
+		"title-animation": "data--100-bottom-top='opacity:0' data--500-bottom-top='opacity:1'",
+		"item-animation": "data--200-bottom-top='opacity:0' data--600-bottom-top='opacity:1'",
 		"ux-skill": [
 			"Wireframing",
 			"Visual Design",
@@ -19,11 +21,12 @@
 			"Information Architecture",
 			"Interaction Design"
 		],
-		"icon2": "assets/images/dev_icon.png",
+		"icon2": "assets/images/index/dev_icon.png",
 		"col2-heading": "Front-End Developement",
 		"col2-body": "I have the ability to make my designs a reality in code. My focus has been on static web developement but I’m in the process of learning ios and android developement.",
-		"CTA": "View Example",
-			"dev-skill": [
+		"CTA2": "View Example",
+		"link2":"portfolio_site.html",
+		"dev-skill": [
 			"HTML",
 			"CSS",
 			"JavaScript",
@@ -33,12 +36,13 @@
 	"section1": {
 		"section-title": "Design School",
 		"sub-title": "I’m in my 4th year at the University of Cincinnati’s  DAAP Program earning a degree in Graphic comunication design. I’m on track to graduation in spring of 2016.",
-		"img-src": "assets/images/daap3.png"
+		"img-src": "assets/images/index/daap3.png",
+		"title-animation": "data--100-bottom-top='opacity:0' data--500-bottom-top='opacity:1'"
 	},
 	"section2": {
 		"section-title": "Experience",
 		"sub-title": "I over a year of experience working in design in the San Francisco Bay Area.",
-		"img-src": "assets/images/sf.png",
+		"img-src": "assets/images/index/sf.png",
 		"text-color": "text-white",
 		"job1": {
 			"heading": "UX INTERN | SPRING 2014",
@@ -60,17 +64,17 @@
 		"img-src": "",
 		"text-color": "",
 		"companies": [{
-			"logo": "assets/images/chevron_logo.png",
+			"logo": "assets/images/index/chevron_logo.png",
 			"heading": "Chevron Corporate Website Redesign",
 			"body":"Chevron wanted a new platform to express their human energy brand in the context of story telling. My role was interaction design on a team with visual designers, developers and copy writers.",
 			"CTA":"View Project"
 		},{
-			"logo": "assets/images/pge_logo.png",
+			"logo": "assets/images/index/pge_logo.png",
 			"heading": "PGE&E Solar Dashboard",
 			"body":"Pacific Gas and Electric wanted a unique online experience so their solar customers could understand their energy bill. I led the design of this project and was responsible for all phases of the design process.",
 			"CTA":"View Project"
 		},{
-			"logo": "assets/images/genability_logo.png",
+			"logo": "assets/images/index/genability_logo.png",
 			"heading": "Genability Solar Switch",
 			"body":"Switch is a line of web and mobile applications that visualizes a homeowner's potential savings by installing solar panels on their roof. I worked with a small team through all phases of the design process.",
 			"CTA":"View Project"
@@ -79,8 +83,9 @@
 	"section4": {
 		"section-title": "Adventure",
 		"sub-title": "This is how I like to spend my weekends",
-		"img-src": "assets/images/castle_rock.jpg",
+		"img-src": "assets/images/index/castle_rock.jpg",
 		"text-color": "text-white",
-		"CTA": "See Where I've Been"
+		"CTA": "See Where I've Been",
+		"link": "vertical.html"
 	}
 }

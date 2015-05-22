@@ -1,9 +1,9 @@
 <section class="full-width-wrap" id="below" style="background-image: url('{{ imgsrc }}')">
 	<div class="container text-white">
-		<h2 class="text-center margin-bottom-40"> {{title}} </h2>
-		<h2 class="text-center plus">+</h2>
+		<h2 class="text-center margin-bottom-40" {{{ title-animation }}}> {{title}} </h2>
+		<h2 class="text-center plus" {{{ item-animation }}}>+</h2>
 
-		<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 margin-bottom-60">
+		<div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 margin-bottom-60" {{{ item-animation }}}>
 			<div class="skill-container">
 				<div class="skill-circle center-block">
 					<img src="{{icon1}}" class="center-block vertical-align">
@@ -16,10 +16,10 @@
 			</div>
 			<h3> {{col1-heading}} </h3>
 			<p> {{col1-body}} </p>
-			<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i> </button>
+			<a href="{{ link1 }}" class="btn btn-default" role="button">{{ CTA1 }} <i class="fa fa-arrow-right"></i></a>
 		</div>
 
-		<div class="col-md-5 col-md-offset-2 col-sm-10 col-sm-offset-1 margin-bottom-60 ">
+		<div class="col-md-5 col-md-offset-2 col-sm-10 col-sm-offset-1 margin-bottom-60" {{{ item-animation }}}>
 			<div class="skill-container">
 				<div class="skill-circle center-block">
 					<img src="{{icon2}}" class="center-block vertical-align">
@@ -32,7 +32,7 @@
 			</div>
 			<h3> {{col2-heading}} </h3>
 			<p> {{col2-body}} </p>
-			<button type="button" class="btn btn-default"> {{CTA}} <i class="fa fa-arrow-right"></i></button>
+			<a href="{{ link2 }}" class="btn btn-default" role="button">{{ CTA2 }} <i class="fa fa-arrow-right"></i></a>
 		</div>
 	</div>
 	<div class="more">

@@ -1,39 +1,36 @@
-<section class="full-width-wrap" style="background-color: #FAFAFA">
+<div class="full-width-wrap">
 	<div class="container">
-		<div class="row">
-			<ul class="col-xs-12"> <!--This creates too much padding -->
-				<!--<h2 class="text-center margin-bottom-20">{{ hero.page-title }}</h2>-->
-				{{#each projects}}
-					{{#if featured}}
-					<li {{ bottom-fade-in }} >
-						<div class="col-md-8 col-sm-12 col-xs-12">
-							<div class="card-medium">
-								<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
-								<div class="card-text">
-									<h4 class="weight-medium">{{ title }}</h4>
-									<h5 class="weight-light">{{ description }}</h5>
-									<a><h5 class="weight-light ">{{ cta }}</h5></a>
-								</div
-							</div>
+		<h2 class="text-center weight-medium margin-bottom-40">{{ page-title }}</h2>
+		<ul class="row grid">
+			{{#each projects}}
+				{{#if featured}}
+				<li>
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="card-medium">
+							<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
+							<div class="card-text">
+								<h3>{{ title }}</h3>
+								<p>{{ description }}</p>
+								<a href="{{ link }}" class="btn btn-primary" role="button">{{ CTA }} <i class="fa fa-arrow-right"></i></a>
+							</div
 						</div>
-					</li>	
-					{{else}}
-					<li {{ bottom-fade-in }} >
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="card">
-								<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
-								<div class="card-text">
-									<h4 class="weight-medium">{{ title }}</h4>
-									<h5 class="weight-light">{{ description }}</h5>
-									<a><h5 class="weight-light ">{{ cta }}</h5></a>
-								</div
-							</div>
+					</div>
+				</li>	
+				{{else}}
+				<li>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="card">
+							<div class="card-medium-img" style="background-image: url('{{ imgsrc }}')"></div>
+							<div class="card-text">
+								<h3>{{ title }}</h3>
+								<p>{{ description }}</p>
+								<a href="{{ link }}" class="btn btn-primary" role="button">{{ CTA }} <i class="fa fa-arrow-right"></i></a>
+							</div
 						</div>
-					</li>
-					{{/if}}
-				{{/each}}
-
-			</ul>
-		</div>
+					</div>
+				</li>
+				{{/if}}
+			{{/each}}
+		</ul>
 	</div>
-</section>
+</div>

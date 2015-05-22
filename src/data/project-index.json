@@ -1,26 +1,43 @@
 {
-	"hero": {
-		"page-title": "Projects"
-		},
-		
-	"bottom-fade-in": "data-0=\"opacity:0;\" data-20-bottom-top=\"opacity:1;transform[bounce];\"",
-		
+	"page-title": "Projects",
 	"projects": [{
 			"title": "PG&E Solar Dashboard",
 			"description": "An online experience to help PG&E solar customers understand and visualize their electricity bill",
-			"imgsrc": "assets/images/macbook-mockup.png",
-  			"cta": "View Case Study",
+			"imgsrc": "assets/images/solar/solar_hero.png",
+  			"CTA": "View Case Study",
+  			"link": "solar.html",
   			"featured": "yes"
 		},{
 			"title":"This Website",
 			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.",
-			"imgsrc": "assests",
-			"cta": "View Project"
+			"imgsrc": "assets/images/index/polygon.png",
+			"CTA": "View Project"
 		},{
-			"title": "Opower Thermostat",
-			"description": "Improving the mobile experience and utilizing behavioral science to reduce energy consumption",
+			"title":"Chevron.com",
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.",
+			"imgsrc": "assests",
+			"CTA": "View Project"
+		},{
+			"title":"Opower Thermostat",
+			"description":"Improving the mobile experience and utilizing behavioral science to reduce energy consumption",
 			"imgsrc": "assets/images/thermostat_thumb.png",
-  			"cta": "View Case Study",
+			"CTA": "View Case Study",
 			"featured": "yes"
+		},{
+			"title":"Quantified Commute",
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.",
+			"imgsrc": "assests",
+			"CTA": "View Project"
+		},{
+			"title":"Vertical Frontier",
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.",
+			"imgsrc": "assets/images/vertical/vertical_hero.png",
+			"CTA": "View Project",
+			"link": "vertical.html"
+		},{
+			"title": "Genability Switch",
+			"description": "Improving the mobile experience and utilizing behavioral science to reduce energy consumption",
+			"imgsrc": "",
+  			"CTA": "View Project"
 		}]
 }
