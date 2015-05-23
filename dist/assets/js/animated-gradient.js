@@ -1,5 +1,16 @@
 $(function() {
   $('#below').css('margin-top', $('#landing').outerHeight());
+
+});
+
+$(window).on('scroll', function() {
+    var landing_height = $('#landing').outerHeight();
+    var y_scroll_pos = window.pageYOffset;
+
+    if(y_scroll_pos > landing_height) {
+        
+
+    }
 });
 
 var colors = new Array(
