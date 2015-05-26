@@ -39,5 +39,26 @@
 		"sub-heading": "Prototyping using Invision",
 		"body": "From my wireframes I created high fidelity prototypes with limited interactivity. Since clear communication was essential to the success of this design, I wanted to test with proper visual hierarchy",
 		"img-src": "assets/images/solar/invision.png"
+	},
+	"testing": {
+		"sub-heading": "User testing using  Lean UX Principles",
+		"body": "Using the invision prototype we conducted 2 rounds of remote user testing sessions with 6 participants each. After each round of testing I consolidated the findings and then iterated on the prototype",
+		"img-src": "assets/images/solar/testing.png",
+		"text-color":"text-white",
+		"background": "testing-blue"
+	},
+	"final": {
+		"sub-heading": "Final Designs",
+		"body": "Roll over to learn more about design decisions",
+		"img-src": "assets/images/solar/solar_final.png"
+	},
+	"documentation": {
+		"sub-heading": "Functional documentation for the client & developerss",
+		"body": "The final deliverable was a specification document that explained the functionality of the product as well as research findings. This was used internally by PG&E to bring stakeholders up to speed so that they could come sign off on the design. It was also used as reference for the developement.",
+		"img-src": "assets/images/solar/documentation.png"
+	},
+	"results": {
+		"sub-heading": "It launched to 125,000 PGE customers in December 2014.",
+		"conclusion": "The design was so well recieved by PG&E that they bought an expansion including a full suite of web products specifically for solar customers."
 	}
 }

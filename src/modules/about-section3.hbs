@@ -1,7 +1,7 @@
 <section class="full-width-wrap white-bg no-padding padding-bottom-60">
 	<div class="container">
 		<div class="row margin-top-50">
-			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}" {{{ title-animation }}}>
 				<h2 class="text-center">{{ section-title }}</h2>
 				<p class="text-center">{{ sub-title }}</p>
 			</div>
@@ -16,7 +16,7 @@
 		{{/if}}
 		<!--Write an each statement-->
 		{{#each companies}}
-		<div class="row energy-row">
+		<div class="row energy-row" {{{ item-animation }}}>
 			<div class="col-md-2">
 				<img class="company-logo center-block" src="{{ logo }}">
 			</div>

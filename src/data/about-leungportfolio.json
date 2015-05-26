@@ -11,8 +11,8 @@
 		"col1-body": "From conepts to wireframes to pixel-perfect interfaces, I utlitize user centered design principles to create beautiful digital products that are easy to use and engaging.",
 		"CTA1": "View Example",
 		"link1":"solar.html",
-		"title-animation": "data--100-bottom-top='opacity:0' data--500-bottom-top='opacity:1'",
-		"item-animation": "data--200-bottom-top='opacity:0' data--600-bottom-top='opacity:1'",
+		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'",
+		"item-animation": "data--25p-bottom-top='opacity:0' data--50p-bottom-top='opacity:1'",
 		"ux-skill": [
 			"Wireframing",
 			"Visual Design",
@@ -37,7 +37,7 @@
 		"section-title": "Design School",
 		"sub-title": "I’m in my 4th year at the University of Cincinnati’s  DAAP Program earning a degree in Graphic comunication design. I’m on track to graduation in spring of 2016.",
 		"img-src": "assets/images/index/daap3.png",
-		"title-animation": "data--100-bottom-top='opacity:0' data--500-bottom-top='opacity:1'"
+		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
 	},
 	"section2": {
 		"section-title": "Experience",
@@ -56,28 +56,33 @@
 			"heading": "DESIGN INTERN | SPRING 2013",
 			"body":"User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation"
 		},
-		"gradient":"yes"
+		"gradient":"yes",
+		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
 	},
 	"section3": {
 		"section-title": "The Energy Industry",
 		"sub-title": "In the past 2 years I’ve worked on 3 major projects for companies in the energy industry.",
 		"img-src": "",
 		"text-color": "",
+		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'",
 		"companies": [{
 			"logo": "assets/images/index/chevron_logo.png",
 			"heading": "Chevron Corporate Website Redesign",
 			"body":"Chevron wanted a new platform to express their human energy brand in the context of story telling. My role was interaction design on a team with visual designers, developers and copy writers.",
-			"CTA":"View Project"
+			"CTA":"View Project",
+			"item-animation": "data--20p-bottom-top='opacity:0' data--45p-bottom-top='opacity:1'"
 		},{
 			"logo": "assets/images/index/pge_logo.png",
 			"heading": "PGE&E Solar Dashboard",
 			"body":"Pacific Gas and Electric wanted a unique online experience so their solar customers could understand their energy bill. I led the design of this project and was responsible for all phases of the design process.",
-			"CTA":"View Project"
+			"CTA":"View Project",
+			"item-animation": "data--20p-bottom-top='opacity:0' data--45p-bottom-top='opacity:1'"
 		},{
 			"logo": "assets/images/index/genability_logo.png",
 			"heading": "Genability Solar Switch",
 			"body":"Switch is a line of web and mobile applications that visualizes a homeowner's potential savings by installing solar panels on their roof. I worked with a small team through all phases of the design process.",
-			"CTA":"View Project"
+			"CTA":"View Project",
+			"item-animation": "data--20p-bottom-top='opacity:0' data--45p-bottom-top='opacity:1'"
 		}]
 	},
 	"section4": {
@@ -86,6 +91,7 @@
 		"img-src": "assets/images/index/castle_rock.jpg",
 		"text-color": "text-white",
 		"CTA": "See Where I've Been",
-		"link": "vertical.html"
+		"link": "vertical.html",
+		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
 	}
 }

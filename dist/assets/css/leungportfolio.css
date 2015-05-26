@@ -479,6 +479,16 @@ ul.grid {
   padding-top: 75px;
   padding-bottom: 75px; }
 
+.testing-blue {
+  background: #366678;
+  background: -moz-linear-gradient(top, #366678 1%, #6bb4e7 99%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #366678), color-stop(99%, #6bb4e7));
+  background: -webkit-linear-gradient(top, #366678 1%, #6bb4e7 99%);
+  background: -o-linear-gradient(top, #366678 1%, #6bb4e7 99%);
+  background: -ms-linear-gradient(top, #366678 1%, #6bb4e7 99%);
+  background: linear-gradient(to bottom, #366678 1%, #6bb4e7 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#366678', endColorstr='#6bb4e7',GradientType=0 ); }
+
 .image-right .conclusion {
   padding-top: 75px; }
 
