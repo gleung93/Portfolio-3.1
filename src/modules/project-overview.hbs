@@ -1,4 +1,4 @@
-<section>
+<section class="{{class}}">
 	<div class="container">
 		{{#if role-title }}
 		<div class="row">
@@ -11,10 +11,12 @@
 				<p>{{ role-body }}</p>
 			</div>
 		</div>
+		{{#if CTA}}
 		<div class="read_case">
 			<p class="text-center">{{ CTA }}</p>
 			<img class="arrow-down center-block" src="assets/images/down_arrow.svg">
 		<div>
+		{{/if}}
 		{{else}}
 		<div class="row">
 			<div class="col-md-6">

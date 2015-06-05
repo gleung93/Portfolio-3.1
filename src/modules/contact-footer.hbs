@@ -1,14 +1,22 @@
-<section>
-	<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-	<div id="SkypeButton_Call_gleung93_1">
-	  <script type="text/javascript">
-	    Skype.ui({
-	      "name": "call",
-	      "element": "SkypeButton_Call_gleung93_1",
-	      "participants": ["gleung93"],
-	      "imageColor": "white",
-	      "imageSize": 32
-	    });
-	  </script>
+<section class="full-width-wrap white-bg no-padding">
+	<div class="container overlayed-title">
+		<div class="row margin-bottom-60">
+			<div class="col-md-5 col-md-offset-3 col-sm-12 col-sm-offset-0 {{text-color}}" {{{ title-animation }}}>
+				<h2 class="text-center">{{ section-title }}</h2>
+				<p class="text-center">{{ sub-title }}</p>
+				<div class="center contact-container">
+					<a href="mailto:leunggc@mail.uc.edu" target="_blank">
+						<img class="contact-image-small" src="{{ img-src-email }}">
+					</a>
+					<a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:gleung93?call">
+						<img class="contact-image-small" src="{{ img-src-skype }}">
+					</a>
+					<a href="//www.linkedin.com/in/gleung93" target="_blank">
+						<img class="contact-image-small" src="{{ img-src-linkedin }}">
+					</a>
+				</div>
+				<p class="text-center">{{ email }}</p>
+			</div>
+		</div>
 	</div>
 </section>

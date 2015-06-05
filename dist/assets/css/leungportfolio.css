@@ -1,3 +1,6 @@
+.gray-background {
+  background-color: #F4F4F4; }
+
 html, body {
   font: 100% "Roboto", sans-serif;
   color: #343434; }
@@ -270,7 +273,6 @@ section {
 .hero {
   position: relative;
   background-color: #222;
-  color: white;
   width: 100%;
   height: 625px;
   margin-top: -51px;
@@ -535,6 +537,14 @@ ul.grid {
   top: 0;
   left: 0;
   z-index: 1; }
+
+.contact-image-small {
+  padding: 15px;
+  display: inline-block;
+  text-align: center; }
+
+.contact-container {
+  width: 260px; }
 
 .contact-item {
   position: relative;

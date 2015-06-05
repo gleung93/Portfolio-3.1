@@ -93,5 +93,15 @@
 		"CTA": "See Where I've Been",
 		"link": "vertical.html",
 		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
+	},
+	"contact-footer": {
+		"section-title": "Lets Chat",
+		"sub-title": "Shoot me an email for the fastest response",
+		"img-src-email": "assets/images/contact/email_small.png",
+		"img-src-skype": "assets/images/contact/skype_small.png",
+		"img-src-linkedin": "assets/images/contact/linkedin_small.png",
+		"text-color": "text-white",
+		"email":"gleung93@gmail.com",
+		"title-animation": "data--5p-bottom-top='opacity:0' data--20p-bottom-top='opacity:1'"
 	}
 }

@@ -1,0 +1,49 @@
+{
+	"hero": {
+		"page-title": "Portfolio Website",
+		"sub-title1": "FRONT-END / VISUAL DESIGN / UX",
+		"img-src": "assets/images/portfolio/portfolio_hero.png"
+	},
+	"overview": {
+		"about-title": "About the project",
+		"about-body": "As my skills develope I find I am never satisfied with my previous work. Last years portfolio website had stylesheets that were a mess, html that was difficult to read and the site completely fell apart on mobile. I set out this year to create a responsive website that had a clear seperation of concerns and was composed of reusable modules. A big priority was to make easy to make future updates to the site"
+	},
+	"stack": {
+		"sub-title": "As a rock climber I thought it would be interesting to visualize all of my climbing adventures",
+		"img-src": "assets/images/vertical/yosemite.jpg",
+		"class": "gray-background",
+		"item": [{
+			"title": "Bootstrap",
+			"description": "Knowing that I wanted to build a responsive website I chose to use Bootstrap as a CSS framework. It was a good starting point but I eneded up not needing most of it’s features",
+			"img-src": "assets/images/portfolio/bootstrap.png"
+		},{
+			"title":"SASS",
+			"description":"SASS allowed me to keep my styles nice and tidy throughout the process.",
+			"img-src": "assets/images/portfolio/sass.png"
+		},{
+			"title":"GIT",
+			"description":"For version control",
+			"img-src": "assets/images/portfolio/git.png"
+		},{
+			"title":"Assemble",
+			"description":"A static site generator that allowed me to create reusable modules and led the path to a clear seperation of concerns. I kept my data in json files, structure in handlebars files, and reusable components in partials.",
+			"img-src": "assets/images/portfolio/assemble.png"
+		},{
+			"title":"Grunt",
+			"description":"For task management. Allowed me to compile my sass, Assemble static pages and concat and minify my scripts with a simple command.",
+			"img-src": "assets/images/portfolio/grunt.png"
+		},{
+			"title":"Jquery",
+			"description":"For those more complex interactions",
+			"img-src": "assets/images/portfolio/jquery.png"
+		},{
+			"title":"NPM",
+			"description":"For package control",
+			"img-src": "assets/images/portfolio/npm.png"
+		},{
+			"title": "Travis CI",
+			"description": " A continous integration service that syncs with github. It detects when I’ve made a commit to the production branch and then builds and deploys to amazon s3.",
+			"img-src": "assets/images/portfolio/travis.png"
+		}]
+	}
+}
