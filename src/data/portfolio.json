@@ -9,7 +9,8 @@
 		"about-body": "As my skills develope I find I am never satisfied with my previous work. Last years portfolio website had stylesheets that were a mess, html that was difficult to read and the site completely fell apart on mobile. I set out this year to create a responsive website that had a clear seperation of concerns and was composed of reusable modules. A big priority was to make easy to make future updates to the site"
 	},
 	"stack": {
-		"sub-title": "As a rock climber I thought it would be interesting to visualize all of my climbing adventures",
+		"section-title":"Technology Stack",
+		"sub-title": "The first step was deciding what web tehnologies would be appropriate to help me acheive my goals",
 		"img-src": "assets/images/vertical/yosemite.jpg",
 		"class": "gray-background",
 		"item": [{
@@ -45,5 +46,9 @@
 			"description": " A continous integration service that syncs with github. It detects when I’ve made a commit to the production branch and then builds and deploys to amazon s3.",
 			"img-src": "assets/images/portfolio/travis.png"
 		}]
+	},
+	"testing":{
+		"sub-heading": "QA Testing",
+		"body": "I used Google Page speed to figure out what parts of the site were impacting performance the most."
 	}
 }

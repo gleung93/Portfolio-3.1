@@ -6,7 +6,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="yes" name="apple-mobile-web-app-capable">
         
-    	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     	
     	<link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -16,6 +16,7 @@
         <script src="assets/js/bootstrap.js"></script>
         <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
+        <script src="assets/js/annotate.js"></script>
         <script src="assets/js/skill-spokes.js"></script>
         <script src="assets/js/animated-gradient.js"></script>
         <script src="assets/js/experience_selector.js"></script>
@@ -65,7 +66,7 @@
 	</div>
 </div>
 
-<section class="">
+<section class="module ">
 	<div class="container">
 		
 		<div class="row">
@@ -79,57 +80,93 @@
 </section>
 <section class="gray-background">
 	<div class="container">
+		<div class="row margin-bottom-60">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 " >
+				<h2 class="text-center">Technology Stack</h2>
+				<p class="text-center">The first step was deciding what web tehnologies would be appropriate to help me acheive my goals</p>
+			</div>
+		</div>
 		<div class="row">
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/bootstrap.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/bootstrap.png" class="center-block vertical-align">
+				</div>
 				<h3>Bootstrap</h3>
 				<p>Knowing that I wanted to build a responsive website I chose to use Bootstrap as a CSS framework. It was a good starting point but I eneded up not needing most of it’s features</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/sass.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/sass.png" class="center-block vertical-align">
+				</div>
 				<h3>SASS</h3>
 				<p>SASS allowed me to keep my styles nice and tidy throughout the process.</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/git.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/git.png" class="center-block vertical-align">
+				</div>
 				<h3>GIT</h3>
 				<p>For version control</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/assemble.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/assemble.png" class="center-block vertical-align">
+				</div>
 				<h3>Assemble</h3>
 				<p>A static site generator that allowed me to create reusable modules and led the path to a clear seperation of concerns. I kept my data in json files, structure in handlebars files, and reusable components in partials.</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/grunt.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/grunt.png" class="center-block vertical-align">
+				</div>
 				<h3>Grunt</h3>
 				<p>For task management. Allowed me to compile my sass, Assemble static pages and concat and minify my scripts with a simple command.</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/jquery.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/jquery.png" class="center-block vertical-align">
+				</div>
 				<h3>Jquery</h3>
 				<p>For those more complex interactions</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/npm.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/npm.png" class="center-block vertical-align">
+				</div>
 				<h3>NPM</h3>
 				<p>For package control</p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="assets/images/portfolio/travis.png" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="assets/images/portfolio/travis.png" class="center-block vertical-align">
+				</div>
 				<h3>Travis CI</h3>
 				<p> A continous integration service that syncs with github. It detects when I’ve made a commit to the production branch and then builds and deploys to amazon s3.</p>
 			</div>
 			
 		</div>
+	</div>
+</section>
+<section class="module image-side ">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-7">
+				<h3>QA Testing</h3>
+				<p>I used Google Page speed to figure out what parts of the site were impacting performance the most. </p>
+			</div>
+			
+		</div>
+		
+		
 	</div>
 </section>
         

@@ -1,9 +1,17 @@
 <section class="{{ class }}">
 	<div class="container">
+		<div class="row margin-bottom-60">
+			<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 {{text-color}}" {{{ title-animation }}}>
+				<h2 class="text-center">{{ section-title }}</h2>
+				<p class="text-center">{{ sub-title }}</p>
+			</div>
+		</div>
 		<div class="row">
 			{{#each item}}
-			<div class="col-md-4">
-				<img src="{{ img-src }}" class="center-block">
+			<div class="col-md-4 single-col">
+				<div class="single-col-image">
+					<img src="{{ img-src }}" class="center-block vertical-align">
+				</div>
 				<h3>{{ title }}</h3>
 				<p>{{ description }}</p>
 			</div>

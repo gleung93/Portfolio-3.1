@@ -1,13 +1,13 @@
-<section class="image-right {{background}}">
+<section class="module image-side {{background}}">
 	<div class="container">
 		<div class="row">
 			{{#if img-src}}
-			<div class="col-md-5 {{text-color}}">
+			<div class="col-md-6 {{alignment}} {{text-color}}">
 				<h3>{{ sub-heading }}</h3>
 				<p>{{ body }} </p>
 			</div>
-			<div class="col-md-5 col-md-offset-1 right-image">
-				<img src="{{ img-src }}">
+			<div class="col-md-6 side-image">
+				<img class="img-responsive center-block" src="{{ img-src }}">
 			</div>
 			{{else}}
 			<div class="col-md-7">
@@ -26,7 +26,7 @@
 		{{#if img-src-below }}
 		<div class=" below-image row">
 			<div class="col-md-12">
-				<img class="center-block" src="{{ img-src-below }}">
+				<img class="img-responsive center-block" src="{{ img-src-below }}">
 			</div>
 		</div>
 		{{/if}}

@@ -14,7 +14,9 @@
 	"intro": {
 		"title": "Billing for solar customers works differently.",
 		"body1": "Utility bills can be confusing. This is epecially true for Pacific Gas and Electric (PG&E) customers who own solar panels. Their billing works differently than most because they pay for their electricity usage just once a year instead of every month.",
-		"body2": "Our goal was to create a unique online experience for these users to help increase customer satisfaction and reduce call center costs related to bill confusion"
+		"body2": "Our goal was to create a unique online experience for these users to help increase customer satisfaction and reduce call center costs related to bill confusion",
+		"class": "pge-background",
+		"text-color": "text-white"
 	},
 	"current-experience": {
 		"sub-heading": "Understanding the current experience",
@@ -45,12 +47,29 @@
 		"body": "Using the invision prototype we conducted 2 rounds of remote user testing sessions with 6 participants each. After each round of testing I consolidated the findings and then iterated on the prototype",
 		"img-src": "assets/images/solar/testing.png",
 		"text-color":"text-white",
+		"alignment": "padding-top-60",
 		"background": "testing-blue"
 	},
 	"final": {
 		"sub-heading": "Final Designs",
 		"body": "Roll over to learn more about design decisions",
-		"img-src": "assets/images/solar/solar_final.png"
+		"img-src": "assets/images/solar/solar_final.png",
+		"item": [{
+			"name":"education",
+			"title": "Build in Education",
+			"body": "In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
+			"img-src": "assets/images/solar/education.png"
+		},{
+			"name":"glance",
+			"title":"At a Glance",
+			"body":"In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
+			"img-src": "assets/images/solar/glance.png"
+		},{
+			"name":"details",
+			"title": "Details on Demand",
+			"body": "In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
+			"img-src": "assets/images/solar/details.png"
+		}]
 	},
 	"documentation": {
 		"sub-heading": "Functional documentation for the client & developerss",

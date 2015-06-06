@@ -6,38 +6,35 @@
 	},
 	"overview": {
 		"about-title": "About the project",
-		"about-body": "The Solar Dashboard is an interactive online experience to help Pacific Gas and Electric’s solar customers track and understand their electricity bill.",
+		"about-body": "The Opower thermostat app is a way for home owners to control their energy use from anywhere, any time, using their mobile device. My team was tasked with designing a new experience for users to control and set their ideal temperature schedules.",
 		"role-title": "My role",
-		"role-body": "I led the design of this project with oversight from David Royer, Senior UX Designer at Opower. I was responsible for all phases of the design process including; research, wireframing, user testing, visual design and documentation.",
+		"role-body": "I worked with a small team of developers and designers on a tight release schedule. Some of my responsibilities included wireframing, user testing, prototyping and Interface animation.",
 		"CTA": "Read the Case Study"
 	},
 	"intro": {
-		"title": "Billing for solar customers works differently.",
-		"body1": "Utility bills can be confusing. This is epecially true for Pacific Gas and Electric (PG&E) customers who own solar panels. Their billing works differently than most because they pay for their electricity usage just once a year instead of every month.",
-		"body2": "Our goal was to create a unique online experience for these users to help increase customer satisfaction and reduce call center costs related to bill confusion"
+		"title": "More control over home confort.",
+		"body1": "A new API for our connected thermostat enabled users to set a more flexible home temperature schedule. This new paradigm required a redesign of two important features of the application.",
+		"body2": "With limited developement resources we created a fresh new experience that could be seamlessly integrated into the existing design.",
+		"class": "thermostat-background",
+		"text-color": "text-white"
 	},
-	"current-experience": {
-		"sub-heading": "Understanding the current experience",
-		"body": "To gain an understanding of the current experience for solar customers I conducted an audit of PGE's webite as well as the  paper statements customers recieve in the mail each month.",
-		"img-src": "assets/images/solar/reports.png",
-		"conclusion": "I found that there was a large disconnect between the information a user sees online and what they get in the mail."
+	"behavior-change": {
+		"sub-heading": "Designing for behavior change",
+		"body": "For this project I had to not only create a great user experience but also encourage users to reduce their energy consumption.",
+		"img-src": "assets/images/thermostat/away.png",
+		"alignment": "padding-top-60",
+		"conclusion": "We acheived this by making efficient actions easy and providing users with positive feedback when they are saving energy."
 	},
-	"user-research": {
-		"sub-heading": "User Research",
-		"body": "I worked with the Opower Research team to recruit and interview 6 real PG&E solar customer in order understand how they think about their bill",
-		"icon-src": "assets/images/solar/user_icon.png",
-		"img-src": "assets/images/solar/opower_research.png",
-		"conclusion": "Based on the research, I assembled a customer journey map to better understand the context of how a user would experience PG&E’s website.",
-		"placeholder": "assets/images/solar/placeholder.png"
+	"limit": {
+		"sub-heading": "The sky was not the limit",
+		"body": "Instead of designing from the ground up, I had to figure out ways to create a fresh new experience that aligned with the pre-exiting interaction model.",
+		"img-src": "assets/images/thermostat/tour.png",
+		"alignment": "padding-top-60",
+		"conclusion": "Basically, our solution couldn’t break anything that would require additional developement resources."
 	},
-	"sketching": {
-		"sub-heading": "Sketching & Internal Critique",
-		"body": "Using what I learned from the research I started an interative process of sketching starting with user flows and moving into higher fidelity wireframes. During this process I held work/critique sessions with the Opower UX team.",
-		"img-src-below": "assets/images/solar/solar_sketches.png"
-	},
-	"prototyping": {
-		"sub-heading": "Prototyping using Invision",
-		"body": "From my wireframes I created high fidelity prototypes with limited interactivity. Since clear communication was essential to the success of this design, I wanted to test with proper visual hierarchy",
-		"img-src": "assets/images/solar/invision.png"
+	"data-driven": {
+		"sub-heading": "Data Driven Insights",
+		"body": "Analyzing data about how people use the app helped us to discover usuability issues which then led to design insights",
+		"img-src": "assets/images/thermostat/data.png"
 	}
 }

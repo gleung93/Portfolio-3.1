@@ -1,13 +1,13 @@
-<section class="image-left">
+<section class="module image-side {{background}}">
 	<div class="container">
 		<div class="row">
 			{{#if img-src}}
-			<div class="col-md-6 left-image">
-				<img class="pull-right img-responsive" src="{{ img-src }}">
-			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-md-push-6 {{alignment}} {{text-color}}">
 				<h3>{{ sub-heading }}</h3>
 				<p>{{ body }} </p>
+			</div>
+			<div class="col-md-6 col-md-pull-6 side-image">
+				<img class="img-responsive center-block" src="{{ img-src }}">
 			</div>
 			{{else}}
 			<div class="col-md-7">
