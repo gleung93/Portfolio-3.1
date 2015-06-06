@@ -36,5 +36,11 @@
 		"sub-heading": "Data Driven Insights",
 		"body": "Analyzing data about how people use the app helped us to discover usuability issues which then led to design insights",
 		"img-src": "assets/images/thermostat/data.png"
+	},
+	"testing": {
+		"sub-heading": "Rapid User Testing",
+		"body": "For each round of user testing I created two medium fidelity click-through prototypes that could be displayed on mobile devices. I then used a task-based test to discovery any usability issues.",
+		"img-src": "assets/images/thermostat/ab.png",
+		"conclusion": "By creating two different tests I was able to quickly explore multiple design directions at once."
 	}
 }
