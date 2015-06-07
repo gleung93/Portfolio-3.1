@@ -42,5 +42,22 @@
 		"body": "For each round of user testing I created two medium fidelity click-through prototypes that could be displayed on mobile devices. I then used a task-based test to discovery any usability issues.",
 		"img-src": "assets/images/thermostat/ab.png",
 		"conclusion": "By creating two different tests I was able to quickly explore multiple design directions at once."
+	},
+	"animations": {
+		"sub-heading": "Interface Animations",
+		"body": "As part of the final deliverables I created a series of animated gifs to show the developement team how it should look and feel.",
+		"item": [{
+			"img-src": "assets/images/thermostat/down_state_start.gif"
+		},{
+			"img-src": "assets/images/thermostat/down_state_start.gif"
+		},{
+			"img-src": "assets/images/thermostat/down_state_drag.gif"
+		},{
+			"img-src": "assets/images/thermostat/edit_wake.gif",
+			"landscape": "true"
+		},{
+			"img-src": "assets/images/thermostat/add_away.gif",
+			"landscape": "true"
+		}]
 	}
 }

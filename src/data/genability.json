@@ -1,0 +1,38 @@
+{
+	"hero": {
+		"page-title": "Genability Switch",
+		"sub-title1": "IXD / WEB DESIGN / GREENSTART",
+		"img-src": "assets/images/Genability/hero.png"
+	},
+	"overview": {
+		"about-title": "About the project",
+		"about-body": "This project was an exploration of information architecture. My goal was to assemble a dataset, look for trends or interesting insights and then visualize it in an understandable and engaging way"
+	},
+	"intro": {
+		"sub-title": "As a rock climber I thought it would be interesting to visualize all of my climbing adventures",
+		"img-src": "assets/images/vertical/yosemite.jpg",
+		"text-color":"text-white",
+		"gradient": "true"
+	},
+	"collecting": {
+		"sub-heading": "Collecting &  organizing the data",
+		"body": "I compiled my dataset by looking through climbing guides and noting attributes such as the location, height and difficulty of every climb I had completed.",
+		"img-src": "assets/images/vertical/vert_csv.png"
+	},
+	"exploring": {
+		"sub-heading": "Exploring the data  through sketching",
+		"body": "I realized the most interesting aspect of my data was not the routes themselves but the locations I had traveled to do them. I decided to explore a visualization that indicated how far I traveled to each climbing area and the number of climbs I did there.",
+		"img-src": "assets/images/vertical/vert_sketch.png",
+		"conclusion": "The result was 30in x 20in poster"
+	},
+	"sketching": {
+		"sub-heading": "Sketching & Internal Critique",
+		"body": "Using what I learned from the research I started an interative process of sketching starting with user flows and moving into higher fidelity wireframes. During this process I held work/critique sessions with the Opower UX team.",
+		"img-src-below": "assets/images/solar_sketches.png"
+	},
+	"prototyping": {
+		"sub-heading": "Prototyping using Invision",
+		"body": "From my wireframes I created high fidelity prototypes with limited interactivity. Since clear communication was essential to the success of this design, I wanted to test with proper visual hierarchy",
+		"img-src": "assets/images/invision.png"
+	}
+}

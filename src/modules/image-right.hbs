@@ -16,17 +16,17 @@
 			</div>
 			{{/if}}
 		</div>
-		{{#if conclusion }}
-		<div class="row conclusion">
-			<div class="col-md-8 col-md-offset-2">
-				<h4 class="weight-thin text-center">{{ conclusion }}</h3>
-			</div>
-		</div>
-		{{/if}}
 		{{#if img-src-below }}
 		<div class=" below-image row">
 			<div class="col-md-12">
 				<img class="img-responsive center-block" src="{{ img-src-below }}">
+			</div>
+		</div>
+		{{/if}}
+		{{#if conclusion }}
+		<div class="row conclusion {{text-color}}">
+			<div class="col-md-8 col-md-offset-2">
+				<h4 class="weight-thin text-center">{{ conclusion }}</h3>
 			</div>
 		</div>
 		{{/if}}

@@ -6,10 +6,11 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="yes" name="apple-mobile-web-app-capable">
         
-    	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     	
     	<link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap-magnify.min.css">
         <link rel="stylesheet" href="assets/css/leungportfolio.css">
         
         <script src="assets/js/jquery.min.js"></script>
@@ -17,6 +18,7 @@
         <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
         <script src="assets/js/annotate.js"></script>
+        <script src="assets/js/journey.js"></script>
         <script src="assets/js/skill-spokes.js"></script>
         <script src="assets/js/animated-gradient.js"></script>
         <script src="assets/js/experience_selector.js"></script>
@@ -44,7 +46,7 @@
       			<ul class="nav navbar-nav navbar-right">
         			<li><a href="projects.html">Projects</a></li>
         			<li><a href="contact.html">Contact</a></li>
-        			<li><a href="#"><i class="fa fa-arrow-circle-o-down fa-lg"></i> Resume</a></li>
+        			<li><a href="assets/images/leung_resume_2015.pdf" target="_blank"><i class="fa fa-arrow-circle-o-down fa-lg"></i> Resume</a></li>
       			</ul>
 			</div>
 			
@@ -113,12 +115,12 @@
 			
 		</div>
 		
-		<div class="row conclusion">
+		
+		<div class="row conclusion ">
 			<div class="col-md-8 col-md-offset-2">
 				<h4 class="weight-thin text-center">I found that there was a large disconnect between the information a user sees online and what they get in the mail.</h3>
 			</div>
 		</div>
-		
 		
 	</div>
 </section>
@@ -142,7 +144,52 @@
 		</div>
 	</div>
 	<div class="full-width-wrap grass">
-		<img class="center-block" src="assets/images/solar/placeholder.png">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					
+					<img class="journey-button" id="prev" src="assets/images/solar/journey_button.png">
+					<h4>Previous Experiences</h4>
+					
+					<img class="journey-button" id="prev" src="assets/images/solar/journey_button.png">
+					<h4>Previous Experiences</h4>
+					
+					<img class="journey-button" id="details" src="assets/images/solar/journey_button.png">
+					<h4></h4>
+					
+				</div>
+				<div class="col-md-10">
+					
+					<div id="prev" class="journey-content">
+						<h3>High bill</h3>
+						<p>Users believe they have done everything they can to reduce their bill</p>
+						<h3>Bad Impressions</h3>
+						<p>The majority of users believ that getting solar is a long complicated and expensive preocess.</p>
+						<h3></h3>
+						<p></p>
+					</div>
+					
+					<div id="prev" class="journey-content">
+						<h3>High bill</h3>
+						<p>Users believe they have done everything they can to reduce their bill</p>
+						<h3>Bad Impressions</h3>
+						<p>The majority of users believ that getting solar is a long complicated and expensive preocess.</p>
+						<h3></h3>
+						<p></p>
+					</div>
+					
+					<div id="details" class="journey-content">
+						<h3></h3>
+						<p></p>
+						<h3></h3>
+						<p></p>
+						<h3></h3>
+						<p></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 	<div>
 </section>
 <section class="module image-side ">
@@ -156,12 +203,12 @@
 			
 		</div>
 		
-		
 		<div class=" below-image row">
 			<div class="col-md-12">
 				<img class="img-responsive center-block" src="assets/images/solar/solar_sketches.png">
 			</div>
 		</div>
+		
 		
 	</div>
 </section>
@@ -212,23 +259,23 @@
 				<img class="center-block img-responsive" src="assets/images/solar/solar_final.png">
 				<div class="xdarken"></div>
 				
-				<div id="education_button" class="rollover-circle"><h3>+</h3></div>
-				<img id="education_box" src="assets/images/solar/education.png">
-				<div id="education_text" class="text-white annotate-text">
+				<div id="education" class="rollover-circle"><h3>+</h3></div>
+				<img id="education" src="assets/images/solar/education.png" class="annotate-box content">
+				<div id="education" class="text-white annotate-text content">
 					<h4>Build in Education</h4>
 					<p>In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.</p>
 				</div>
 				
-				<div id="glance_button" class="rollover-circle"><h3>+</h3></div>
-				<img id="glance_box" src="assets/images/solar/glance.png">
-				<div id="glance_text" class="text-white annotate-text">
+				<div id="glance" class="rollover-circle"><h3>+</h3></div>
+				<img id="glance" src="assets/images/solar/glance.png" class="annotate-box content">
+				<div id="glance" class="text-white annotate-text content">
 					<h4>At a Glance</h4>
 					<p>In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.</p>
 				</div>
 				
-				<div id="details_button" class="rollover-circle"><h3>+</h3></div>
-				<img id="details_box" src="assets/images/solar/details.png">
-				<div id="details_text" class="text-white annotate-text">
+				<div id="details" class="rollover-circle"><h3>+</h3></div>
+				<img id="details" src="assets/images/solar/details.png" class="annotate-box content">
+				<div id="details" class="text-white annotate-text content">
 					<h4>Details on Demand</h4>
 					<p>In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.</p>
 				</div>
@@ -254,7 +301,7 @@
 		
 	</div>
 </section>
-<section class="image-right ">
+<section class="module image-right ">
 	<div class="container">
 		
 		<div class="row margin-bottom-40">
@@ -270,127 +317,18 @@
 		</div>
 	</div>
 </section>
-<div class="full-width-wrap">
+<section class="full-width-wrap dark-gray-background footer">
 	<div class="container">
-		<h2 class="text-center weight-medium margin-bottom-40">Projects</h2>
-		<ul class="row grid">
+		<div class="row">
 			
-				
-				<li>
-					<div class="col-md-8 col-sm-12 col-xs-12">
-						<div class="card-medium">
-							<a class="link-container" href="solar.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assets/images/solar/solar_hero.png')"></div>
-							<div class="card-text">
-								<h3>PG&amp;E Solar Dashboard</h3>
-								<p>An online experience to help PG&amp;E solar customers understand and visualize their electricity bill</p>
-								<a href="solar.html" class="btn btn-primary" role="button">View Case Study <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>	
-				
 			
-				
-				<li>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="card">
-							<a class="link-container" href="portfolio.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assets/images/index/polygon.png')"></div>
-							<div class="card-text">
-								<h3>Portfolio Website</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.</p>
-								<a href="portfolio.html" class="btn btn-primary" role="button">View Project <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>
-				
+			<div class="col-xs-6 pull-right">
+				<a role="button" class="btn btn-primary-right" href="thermostat.html">Next Project <i class="fa fa-arrow-right"></i></a>
+			</div>
 			
-				
-				<li>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="card">
-							<a class="link-container" href="chevron.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assets/images/chevron/chevron_thumb.png')"></div>
-							<div class="card-text">
-								<h3>Chevron.com</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.</p>
-								<a href="chevron.html" class="btn btn-primary" role="button">View Project <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>
-				
-			
-				
-				<li>
-					<div class="col-md-8 col-sm-12 col-xs-12">
-						<div class="card-medium">
-							<a class="link-container" href="thermostat.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assets/images/thermostat_thumb.png')"></div>
-							<div class="card-text">
-								<h3>Opower Thermostat</h3>
-								<p>Improving the mobile experience and utilizing behavioral science to reduce energy consumption</p>
-								<a href="thermostat.html" class="btn btn-primary" role="button">View Case Study <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>	
-				
-			
-				
-				<li>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="card">
-							<a class="link-container" href="thermostat.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assests')"></div>
-							<div class="card-text">
-								<h3>Quantified Commute</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.</p>
-								<a href="thermostat.html" class="btn btn-primary" role="button">View Project <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>
-				
-			
-				
-				<li>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="card">
-							<a class="link-container" href="vertical.html"><span></span></a>
-							<div class="card-medium-img" style="background-image: url('assets/images/vertical/vertical_hero.png')"></div>
-							<div class="card-text">
-								<h3>Vertical Frontier</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel erat a nulla ornare lacinia.</p>
-								<a href="vertical.html" class="btn btn-primary" role="button">View Project <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>
-				
-			
-				
-				<li>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="card">
-							<a class="link-container" href=""><span></span></a>
-							<div class="card-medium-img" style="background-image: url('')"></div>
-							<div class="card-text">
-								<h3>Genability Switch</h3>
-								<p>Improving the mobile experience and utilizing behavioral science to reduce energy consumption</p>
-								<a href="" class="btn btn-primary" role="button">View Project <i class="fa fa-arrow-right"></i></a>
-							</div
-						</div>
-					</div>
-				</li>
-				
-			
-		</ul>
+		</div>
 	</div>
-</div>
-
+</section>
         
         <script src="assets/js/skrollr.min.js"></script>
     </body>

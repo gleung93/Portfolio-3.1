@@ -18,6 +18,27 @@
 		</div>
 	</div>
 	<div class="full-width-wrap grass">
-		<img class="center-block" src="{{ placeholder }}">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					{{#each button}}
+					<img class="journey-button" id="{{name}}" src="assets/images/solar/journey_button.png">
+					<h4>{{topic}}</h4>
+					{{/each}}
+				</div>
+				<div class="col-md-10">
+					{{#each button}}
+					<div id="{{name}}" class="journey-content">
+						<h3>{{title1}}</h3>
+						<p>{{body1}}</p>
+						<h3>{{title2}}</h3>
+						<p>{{body2}}</p>
+						<h3>{{title3}}</h3>
+						<p>{{body3}}</p>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
 	<div>
 </section>

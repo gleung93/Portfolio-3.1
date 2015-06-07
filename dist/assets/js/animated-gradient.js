@@ -17,9 +17,11 @@ $(window).on('scroll', function() {
 
     if(y_scroll_pos > landing_height) {
       $("#landing").removeClass("gradient-animate");
+      $(".landing-arrow").hide();
     }
     if(y_scroll_pos < landing_height) {
       $("#landing").addClass("gradient-animate");
+      $(".landing-arrow").show();
     }
 });
 

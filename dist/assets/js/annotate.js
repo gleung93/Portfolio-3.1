@@ -1,26 +1,28 @@
 $(document).ready(function(){
 
     $(".xdarken").hide();
-    $("#education_box").hide();
-    $("#education_text").hide();
-    $("#glance_box").hide();
-    $("#glance_text").hide();
-    $("#details_box").hide();
-    $("#details_text").hide();
+    $(".content").hide();
 
 
-    $("#education_button").click(function() {
-    	if ($('#myDiv:not(:visible)')) {    // you get the idea...
-    //perform your actions
-		}
-    	$('#education_box, #education_text, .xdarken').toggle(!$('#education_box').is(':visible'));
-    	$('#glance_box, #glance_text').toggle(!$('#glance_box').is(':hidden'));
+    $(".rollover-circle").click(function() {
+        var selected = (this.id);
+    	if ($('.xdarken').is(":hidden")) { 
+            $('#'+selected+'.annotate-box').fadeIn();
+            $('#'+selected+'.annotate-text').fadeIn();
+            $('.xdarken').fadeIn();
+		} else {
+            if ($('#'+selected+'.annotate-text').is(":visible")) {
+                $('#'+selected+'.annotate-box').fadeOut();
+                $('#'+selected+'.annotate-text').fadeOut();
+                $(".xdarken").fadeOut();
+            } else {
+                $(".content").fadeOut();
+                $(".content").promise().done(function(){
+                    $('#'+selected+'.annotate-box').fadeIn();
+                    $('#'+selected+'.annotate-text').fadeIn();
+                });  
+            }
+        }
 	});
-
-	$("#glance_button").click(function() {
-    	$('#glance_box, #glance_text, .xdarken').toggle(!$('#glance_box').is(':visible'));
-    	$('#education_box, #education_text').toggle(!$('#education_box').is(':hidden'));
-	});
-
 });
 

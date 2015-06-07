@@ -81,23 +81,26 @@
 	left: -80px
 	cursor: pointer
 
+.rollover-circle.icon-bar
+	width: 22px
+
 .rollover-circle h3
 	text-align: center
 	color: white
 	margin-top: 5px
 
-#education_button
-	top: 18%
-
-#glance_button
+#education.rollover-circle
 	top: 29%
 
-#details_button
-	top: 43%
+#glance.rollover-circle
+	top: 47%
 
-#education_box
+#details.rollover-circle
+	top: 69%
+
+.annotate-box
 	position: absolute
-	top: 20.9%
+	z-index: 99
 	width: 78.5%
 	margin-right: auto
 	margin-left: auto
@@ -108,11 +111,70 @@
 	position: absolute
 	width: 78.5%
 	z-index: 99
-	top: 45%
 	margin-right: auto
 	margin-left: auto
 	left: 0
 	right: 0
+
+#education.annotate-box
+	top: 20.9%
+
+#glance.annotate-box
+	top: 43.4%
+
+#details.annotate-box
+	top: 57.5%
+
+#education.annotate-text
+	top: 44%
+
+#glance.annotate-text
+	top: 58%
+
+#details.annotate-text
+	top: 43%
+	@media only screen and (max-width : 991px)
+		top: 30%
+
+.ui-gif
+	position: absolute
+	z-index: 2
+	top: 17.4%
+	margin-right: auto
+	margin-left: auto
+	left: 0
+	right: 0
+	@media only screen and (max-width : 420px)
+		width: 74%
+
+.ui-gif-90
+	@extend .ui-gif
+	top: 8%
+	@media only screen and (max-width : 768px)
+		width: 64%
+
+.rotate90
+	-ms-transform: rotate(90deg)
+	-webkit-transform: rotate(90deg)
+	transform: rotate(90deg)
+
+.gradient-top-blue
+	position: absolute
+	top: 0px
+	width: 100%
+	height: 400px
+	background: -moz-linear-gradient(top,  rgba(23,17,51,1) 0%, rgba(23,17,51,0) 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(23,17,51,1)), color-stop(100%,rgba(23,17,51,0)))
+	background: -webkit-linear-gradient(top,  rgba(23,17,51,1) 0%,rgba(23,17,51,0) 100%)
+	background: -o-linear-gradient(top,  rgba(23,17,51,1) 0%,rgba(23,17,51,0) 100%)
+	background: -ms-linear-gradient(top,  rgba(23,17,51,1) 0%,rgba(23,17,51,0) 100%)
+	background: linear-gradient(to bottom,  rgba(23,17,51,1) 0%,rgba(23,17,51,0) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171133', endColorstr='#00171133',GradientType=0 )
+
+.footer
+	padding: 30px 0px 30px 0px
+
+
 
 
 
