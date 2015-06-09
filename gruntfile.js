@@ -42,24 +42,6 @@ module.exports = function(grunt) {
           }
         }
       },
-        
-    	copy: {
-      		JQuery: {
-        		src: 'src/js/jquery.min.js',
-        		dest: 'dist/assets/js/jquery.min.js',
-      		},
-
-          BootstrapJs: {
-            src: 'bower_components/bootstrap/dist/js/bootstrap.js',
-            dest: 'dist/assets/js/bootstrap.js',
-          },
-
-      		SkrollrJs: {
-        		src: 'src/js/skrollr.min.js',
-        		dest: 'dist/assets/js/skrollr.min.js',
-      		}
-
-    	},
     	
     	concat: {
       		options: {
@@ -69,13 +51,13 @@ module.exports = function(grunt) {
       		dist: {
         		src: ['src/js/*.js'],
         		dest: 'dist/assets/js/portfolio.js'
-      		},
+      		}
    		},
         
     watch: {
       scripts: {
         files: ['src/data/*', 'src/*', 'src/modules/*', 'src/pages/*', 'dist/css/*', 'src/sass/*', 'src/js/*.js'],
-        tasks: ['sass', 'assemble','concat', 'copy'],
+        tasks: ['sass', 'assemble','concat'],
         options: {
           spawn: false,
         },
@@ -84,10 +66,9 @@ module.exports = function(grunt) {
     });
     
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('assemble');
     grunt.loadNpmTasks('grunt-contrib-sass');
     
-    grunt.registerTask("build", ['sass', 'assemble', 'concat', 'copy']);
+    grunt.registerTask("build", ['sass', 'assemble', 'concat']);
 };

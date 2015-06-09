@@ -1,38 +1,20 @@
 $(document).ready(function(){
 
     $(".journey-content").hide();
+    $(".journey-button").fadeTo(1, .4);
     $("#prev.journey-content").show();
-
+    $("#prev.journey-button").fadeTo(1, 1);
 
     $(".journey-button").click(function() {
         var selected = (this.id);
     	if ($('#'+selected+'.journey-content').is(":hidden")) {
-            $(".journey-content").fadeOut(function(){
+            $(".journey-content").fadeOut();
+            $('.journey-button').fadeTo(500, 0.4);
+            $(".journey-content").promise().done(function(){
                 $('#'+selected+'.journey-content').fadeIn();
+                $('#'+selected+'.journey-button').fadeTo(500, 1);
             });
-
         }
 	});
-
-    $(".button").click(function() {
-        var selected = (this.id);
-        if ($('.xdarken').is(":hidden")) { 
-            $('#'+selected+'.annotate-box').fadeIn();
-            $('#'+selected+'.annotate-text').fadeIn();
-            $('.xdarken').fadeIn();
-        } else {
-            if ($('#'+selected+'.annotate-text').is(":visible")) {
-                $('#'+selected+'.annotate-box').fadeOut();
-                $('#'+selected+'.annotate-text').fadeOut();
-                $(".xdarken").fadeOut();
-            } else {
-                $(".content").fadeOut();
-                $(".content").promise().done(function(){
-                    $('#'+selected+'.annotate-box').fadeIn();
-                    $('#'+selected+'.annotate-text').fadeIn();
-                });  
-            }
-        }
-    });
 });
 

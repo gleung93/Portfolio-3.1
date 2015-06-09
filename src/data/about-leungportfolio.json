@@ -23,7 +23,7 @@
 		],
 		"icon2": "assets/images/index/dev_icon.png",
 		"col2-heading": "Front-End Developement",
-		"col2-body": "I have the ability to make my designs a reality in code. My focus has been on static web developement but I’m in the process of learning ios and android developement.",
+		"col2-body": "I have the ability to make my designs a reality in code. My focus has been on web developement but I’m in the process of learning ios and android developement.",
 		"CTA2": "View Example",
 		"link2":"portfolio.html",
 		"dev-skill": [
@@ -50,7 +50,7 @@
 		},
 		"job2": {
 			"heading": "UX INTERN | FALL 2013, SUMMER 2014",
-			"body":"User experience design work that utilizes behavioral science un order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation"
+			"body":"User experience design work that utilizes behavioral science in order to encourage people to use less energy. The work spanned a variety of different channels including, mobile, web, email and print. Responsibilities included user research, wireframing, prototyping, user testing and documentation"
 		},
 		"job3": {
 			"heading": "DESIGN INTERN | SPRING 2013",
@@ -98,8 +98,8 @@
 		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
 	},
 	"contact-footer": {
-		"section-title": "Lets Chat",
-		"sub-title": "Shoot me an email for the fastest response",
+		"section-title": "Drop me a line",
+		"sub-title": "I'm currently seeking an internship for fall 2015",
 		"img-src-email": "assets/images/contact/email_small.png",
 		"img-src-skype": "assets/images/contact/skype_small.png",
 		"img-src-linkedin": "assets/images/contact/linkedin_small.png",

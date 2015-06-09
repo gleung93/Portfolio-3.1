@@ -2,7 +2,8 @@
 	"hero": {
 		"page-title": "Quantified Commute",
 		"sub-title1": "UX / MOBILE UI / DAAP ",
-		"img-src": "assets/images/qc/qc_hero.png"
+		"img-src": "assets/images/qc/qc_hero.png",
+		"darken": "true"
 	},
 	"overview": {
 		"about-title": "About the project",

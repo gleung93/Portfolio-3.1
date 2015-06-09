@@ -11,5 +11,9 @@
 		"role-body": "I worked with a large team of designers, writers and developers. My primary responsibilities as an interaction designer included information architecture, wireframing, and prototyping. Other responsibilities included developing how the established brand could be visually expressed on the web.",
 		"conclusion":"I am not able to show any of the work here. Feel free to contact me if you’d like to learn more about my experience.",
 		"class":"gray-background"
+	},
+	"footer": {
+		"next-link": "thermostat.html",
+		"prev-link": "portfolio.html"
 	}
 }

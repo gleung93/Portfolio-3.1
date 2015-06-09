@@ -8,6 +8,9 @@
         
     	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     	
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        
     	<link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="bootstrap-magnify.min.css">
@@ -17,8 +20,8 @@
         <script src="assets/js/bootstrap.js"></script>
         <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
-        <script src="assets/js/annotate.js"></script>
         <script src="assets/js/journey.js"></script>
+        <script src="assets/js/annotate.js"></script>
         <script src="assets/js/skill-spokes.js"></script>
         <script src="assets/js/animated-gradient.js"></script>
         <script src="assets/js/experience_selector.js"></script>
@@ -57,7 +60,9 @@
     	
 
 <div class="hero" style="background-image: url('assets/images/solar/solar_hero.png')">
+	
 	<div class="darken"></div>
+	
 	<div class="container vertical-align">
 		<div class="row">
 			<div class="col-md-6 text-white">
@@ -145,46 +150,135 @@
 	</div>
 	<div class="full-width-wrap grass">
 		<div class="container">
+			<div class="row conclusion margin-bottom-60">
+				<div class="col-md-8 col-md-offset-2">
+					<h4 class="weight-thin text-center text-white">Based on the research, I assembled a customer journey map to better understand the context of how a user would experience PG&amp;E’s website.</h3>
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-xs-4">
 					
-					<img class="journey-button" id="prev" src="assets/images/solar/journey_button.png">
-					<h4>Previous Experiences</h4>
+					<div id="prev" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">Previous<br> Experiences</h4>
+					</div>
 					
-					<img class="journey-button" id="prev" src="assets/images/solar/journey_button.png">
-					<h4>Previous Experiences</h4>
+					<div id="exploration" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">Exploration</h4>
+					</div>
 					
-					<img class="journey-button" id="details" src="assets/images/solar/journey_button.png">
-					<h4></h4>
+					<div id="install" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">Installation<br>Phase</h4>
+					</div>
+					
+					<div id="month" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">First Month</h4>
+					</div>
+					
+					<div id="Year" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">First Year</h4>
+					</div>
+					
+					<div id="long" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">Long Term</h4>
+					</div>
 					
 				</div>
-				<div class="col-md-10">
+				<div class="padding-top-100 col-xs-6">
 					
-					<div id="prev" class="journey-content">
-						<h3>High bill</h3>
-						<p>Users believe they have done everything they can to reduce their bill</p>
-						<h3>Bad Impressions</h3>
-						<p>The majority of users believ that getting solar is a long complicated and expensive preocess.</p>
-						<h3></h3>
-						<p></p>
+					<div id="prev" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>High bill</h3>
+							<p>Users believe they have done everything they can to reduce their bill</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Bad Impressions</h3>
+							<p>The majority of users believe that getting solar is a long complicated and expensive process.</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3></h3>
+							<p></p>
+						</div>
 					</div>
 					
-					<div id="prev" class="journey-content">
-						<h3>High bill</h3>
-						<p>Users believe they have done everything they can to reduce their bill</p>
-						<h3>Bad Impressions</h3>
-						<p>The majority of users believ that getting solar is a long complicated and expensive preocess.</p>
-						<h3></h3>
-						<p></p>
+					<div id="exploration" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>Decisions</h3>
+							<p>The amount of information and solar providers was overwhelming</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Lease Vs Ownership</h3>
+							<p>One of the most pressing questions users had was whether to lease or own their solar panels</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>1st Interaction</h3>
+							<p>A solar provider conducting a home inspection to see if they qualify</p>
+						</div>
 					</div>
 					
-					<div id="details" class="journey-content">
-						<h3></h3>
-						<p></p>
-						<h3></h3>
-						<p></p>
-						<h3></h3>
-						<p></p>
+					<div id="install" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>Solar Provider Control</h3>
+							<p>The user&#x27;s solar provider controls the majority of this process</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Poor Introduction</h3>
+							<p>Limited communication with utility. Poor introductions to new billing model</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Information overload</h3>
+							<p>The user is overloaded with new information and paperwork at this stage</p>
+						</div>
+					</div>
+					
+					<div id="month" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>Eager</h3>
+							<p>Users are eager to check on their usage/generation</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>PG&amp;E Web Experience</h3>
+							<p>Many users went online to PGE but found the information limited or not relavant</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Complicated Statements</h3>
+							<p>Many users called PG&amp;E because they didn&#x27;t understand their statement</p>
+						</div>
+					</div>
+					
+					<div id="Year" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>Bill Comparison</h3>
+							<p>Users are interested to know how much solar saved them this year</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Unexpectedly High Bill</h3>
+							<p>At the end of the billing period some users were surprised by how much money they owed</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Stopped Looking at Usage</h3>
+							<p>Many users reported losing interest in checking on their usage</p>
+						</div>
+					</div>
+					
+					<div id="long" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>Investment Pay Off</h3>
+							<p>Users want to know their total savings and when the panels have paid for themselves</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>Detailed Pricing</h3>
+							<p>After having solar for many years users are interested in more detailed time of use rates</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3></h3>
+							<p></p>
+						</div>
 					</div>
 					
 				</div>
@@ -251,7 +345,7 @@
 		<div class="row margin-bottom-40">
 			<div class="col-md-5">
 				<h3>Final Designs</h3>
-				<p>Roll over to learn more about design decisions </p>
+				<p>Click to learn more about design decisions </p>
 			</div>
 		</div>
 		<div class="row">
@@ -270,14 +364,14 @@
 				<img id="glance" src="assets/images/solar/glance.png" class="annotate-box content">
 				<div id="glance" class="text-white annotate-text content">
 					<h4>At a Glance</h4>
-					<p>In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.</p>
+					<p>This area provide users with snapshot view of the current status of their usage charges. It also helps teach novice users how billing works.</p>
 				</div>
 				
 				<div id="details" class="rollover-circle"><h3>+</h3></div>
 				<img id="details" src="assets/images/solar/details.png" class="annotate-box content">
 				<div id="details" class="text-white annotate-text content">
 					<h4>Details on Demand</h4>
-					<p>In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.</p>
+					<p>This allows users to track their charges and see how they progress towards their final payment date. Details on demand helps eliminate surprise bills at the end of the billing cycle.</p>
 				</div>
 				
 			</div>
@@ -322,7 +416,7 @@
 		<div class="row">
 			
 			
-			<div class="col-xs-6 pull-right">
+			<div class="col-xs-4 pull-right">
 				<a role="button" class="btn btn-primary-right" href="thermostat.html">Next Project <i class="fa fa-arrow-right"></i></a>
 			</div>
 			

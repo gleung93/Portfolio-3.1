@@ -2,7 +2,8 @@
 	"hero": {
 		"page-title": "PG&E Solar Dashboard",
 		"sub-title1": "UX / WEB DESIGN / OPOWER",
-		"img-src": "assets/images/solar/solar_hero.png"
+		"img-src": "assets/images/solar/solar_hero.png",
+		"darken": "true"
 	},
 	"overview": {
 		"about-title": "About the project",
@@ -33,23 +34,58 @@
 		"placeholder": "assets/images/solar/placeholder.png",
 		"button": [{
 			"name":"prev",
-			"topic": "Previous Experiences",
+			"topic": "Previous<br> Experiences",
 			"title1": "High bill",
 			"body1": "Users believe they have done everything they can to reduce their bill",
 			"title2": "Bad Impressions",
-			"body2": "The majority of users believ that getting solar is a long complicated and expensive preocess."
+			"body2": "The majority of users believe that getting solar is a long complicated and expensive process."
 		},{
-			"name":"prev",
-			"topic": "Previous Experiences",
-			"title1": "High bill",
-			"body1": "Users believe they have done everything they can to reduce their bill",
-			"title2": "Bad Impressions",
-			"body2": "The majority of users believ that getting solar is a long complicated and expensive preocess."
+			"name":"exploration",
+			"topic": "Exploration",
+			"title1": "Decisions",
+			"body1": "The amount of information and solar providers was overwhelming",
+			"title2": "Lease Vs Ownership",
+			"body2": "One of the most pressing questions users had was whether to lease or own their solar panels",
+			"title3": "1st Interaction",
+			"body3": "A solar provider conducting a home inspection to see if they qualify"
 		},{
-			"name":"details",
-			"title": "Details on Demand",
-			"body": "In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
-			"img-src": "assets/images/solar/details.png"
+			"name":"install",
+			"topic": "Installation<br>Phase",
+			"title1": "Solar Provider Control",
+			"body1": "The user's solar provider controls the majority of this process",
+			"title2": "Poor Introduction",
+			"body2": "Limited communication with utility. Poor introductions to new billing model",
+			"title3": "Information overload",
+			"body3": "The user is overloaded with new information and paperwork at this stage"
+
+		},{
+			"name":"month",
+			"topic": "First Month",
+			"title1": "Eager",
+			"body1": "Users are eager to check on their usage/generation",
+			"title2": "PG&E Web Experience",
+			"body2": "Many users went online to PGE but found the information limited or not relavant",
+			"title3": "Complicated Statements",
+			"body3": "Many users called PG&E because they didn't understand their statement"
+
+		},{
+			"name":"Year",
+			"topic": "First Year",
+			"title1": "Bill Comparison",
+			"body1": "Users are interested to know how much solar saved them this year",
+			"title2": "Unexpectedly High Bill",
+			"body2": "At the end of the billing period some users were surprised by how much money they owed",
+			"title3": "Stopped Looking at Usage",
+			"body3": "Many users reported losing interest in checking on their usage"
+
+		},{
+			"name":"long",
+			"topic": "Long Term",
+			"title1": "Investment Pay Off",
+			"body1": "Users want to know their total savings and when the panels have paid for themselves",
+			"title2": "Detailed Pricing",
+			"body2": "After having solar for many years users are interested in more detailed time of use rates"
+
 		}]
 	},
 	"sketching": {
@@ -72,7 +108,7 @@
 	},
 	"final": {
 		"sub-heading": "Final Designs",
-		"body": "Roll over to learn more about design decisions",
+		"body": "Click to learn more about design decisions",
 		"img-src": "assets/images/solar/solar_final.png",
 		"item": [{
 			"name":"education",
@@ -82,12 +118,12 @@
 		},{
 			"name":"glance",
 			"title":"At a Glance",
-			"body":"In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
+			"body":"This area provide users with snapshot view of the current status of their usage charges. It also helps teach novice users how billing works.",
 			"img-src": "assets/images/solar/glance.png"
 		},{
 			"name":"details",
 			"title": "Details on Demand",
-			"body": "In order to change the mental model of monthly usage billing we built in education for 1st time users. Users can choose to permanently dismiss this notification or learn more.",
+			"body": "This allows users to track their charges and see how they progress towards their final payment date. Details on demand helps eliminate surprise bills at the end of the billing cycle.",
 			"img-src": "assets/images/solar/details.png"
 		}]
 	},

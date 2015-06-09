@@ -131,7 +131,7 @@ p {
   background-color: rgba(14, 183, 145, 0.5);
   color: white; }
 
-.btn-primary, .btn-primary-right {
+.btn-primary, .btn-primary-right, .btn-primary-left {
   background: none;
   padding: 0;
   text-align: left;
@@ -147,9 +147,13 @@ p {
   transition: all 0.3s ease; }
 
 .btn-primary-right {
-  text-align: right; }
+  text-align: right;
+  color: #0EB791; }
 
-.btn-primary:hover, .btn-primary-right:hover {
+.btn-primary-left {
+  color: #0EB791; }
+
+.btn-primary:hover, .btn-primary-right:hover, .btn-primary-left:hover {
   opacity: 0.9;
   color: rgba(14, 183, 145, 0.5);
   background: none; }
@@ -173,6 +177,9 @@ body {
 .margin-top-50 {
   margin-top: 50px; }
 
+.margin-top-100 {
+  margin-top: 50px; }
+
 .margin-bottom-20 {
   margin-bottom: 20px; }
 
@@ -193,6 +200,12 @@ body {
 
 .padding-top-60 {
   padding-top: 60px; }
+
+.padding-top-100 {
+  padding-top: 100px; }
+
+.top-40 {
+  top: 40px; }
 
 #below {
   margin-top: 1440px; }
@@ -512,8 +525,7 @@ ul.grid {
   left: 0;
   right: 0;
   margin-right: auto;
-  margin-left: auto;
-  top: 50px; }
+  margin-left: auto; }
 
 .intro {
   position: relative;
@@ -536,6 +548,7 @@ ul.grid {
   margin-bottom: 0px; }
 
 .sky {
+  z-index: 99;
   background: #ffffff;
   background: -moz-linear-gradient(top, #ffffff 0%, #d4f4fc 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #d4f4fc));
@@ -547,7 +560,7 @@ ul.grid {
 
 .grass {
   background-color: #8BAD2E;
-  z-index: -1;
+  z-index: 0;
   padding-top: 75px;
   padding-bottom: 75px; }
 
@@ -691,6 +704,28 @@ ul.grid {
 .footer {
   padding: 30px 0px 30px 0px; }
 
+.journey-button {
+  z-index: 99;
+  position: relative;
+  margin-bottom: -25px;
+  cursor: pointer; }
+
+.journey-button-title {
+  position: absolute;
+  color: #8BAD2E;
+  top: 0;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 45%;
+  transform: translateY(-45%); }
+
+.carousel-inner > .item > img {
+  margin: 0 auto; }
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none; }
+
 .big-block {
   height: 800px;
   background-color: #262626; }
@@ -736,8 +771,8 @@ ul.grid {
 
 .contact-item {
   position: relative;
-  height: 180px;
-  width: 180px;
+  height: 160px;
+  width: 160px;
   margin-top: 50px;
   border-radius: 50%;
   border-style: solid;

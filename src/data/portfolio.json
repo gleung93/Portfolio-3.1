@@ -8,11 +8,17 @@
 		"about-title": "About the project",
 		"about-body": "As my skills develope I find I am never satisfied with my previous work. Last years portfolio website had stylesheets that were a mess, html that was difficult to read and the site completely fell apart on mobile. I set out this year to create a responsive website that had a clear seperation of concerns and was composed of reusable modules. A big priority was to make easy to make future updates to the site"
 	},
+	"design": {
+		"sub-heading": "Designing a Modular System",
+		"body": "Using Sketch3 I layed out my pages and determined what building blocks were essential to a create a complete project page. I then designed each of these modules so that they would look great no matter which modules were placed next to each other.",
+		"img-src": "assets/images/portfolio/sketch.png",
+		"img-src-below": "assets/images/portfolio/modules.png",
+		"background": "gray-background"
+	},
 	"stack": {
 		"section-title":"Technology Stack",
-		"sub-title": "The first step was deciding what web tehnologies would be appropriate to help me acheive my goals",
+		"sub-title": "The next step was deciding what web tehnologies would be appropriate to help me acheive my goals",
 		"img-src": "assets/images/vertical/yosemite.jpg",
-		"class": "gray-background",
 		"item": [{
 			"title": "Bootstrap",
 			"description": "Knowing that I wanted to build a responsive website I chose to use Bootstrap as a CSS framework. It was a good starting point but I eneded up not needing most of it’s features",
@@ -23,7 +29,7 @@
 			"img-src": "assets/images/portfolio/sass.png"
 		},{
 			"title":"GIT",
-			"description":"For version control",
+			"description":"Great for version control",
 			"img-src": "assets/images/portfolio/git.png"
 		},{
 			"title":"Assemble",
@@ -31,11 +37,11 @@
 			"img-src": "assets/images/portfolio/assemble.png"
 		},{
 			"title":"Grunt",
-			"description":"For task management. Allowed me to compile my sass, Assemble static pages and concat and minify my scripts with a simple command.",
+			"description":"For task management. Allowed me to compile my sass, assemble static pages and concat/minify my scripts with a simple command.",
 			"img-src": "assets/images/portfolio/grunt.png"
 		},{
 			"title":"Jquery",
-			"description":"For those more complex interactions",
+			"description":"Great for programming more complex interactions in a short period of time. Eventually I'd like everything to be pure javascript.",
 			"img-src": "assets/images/portfolio/jquery.png"
 		},{
 			"title":"NPM",
@@ -49,6 +55,13 @@
 	},
 	"testing":{
 		"sub-heading": "QA Testing",
-		"body": "I used Google Page speed to figure out what parts of the site were impacting performance the most."
+		"body": "I used Google Page speed to figure out what parts of the site were impacting performance the most.",
+		"img-src-below": "assets/images/portfolio/qa.png",
+		"background": "gray-background",
+		"conclusion": "More to come about site optimization!"
+	},
+	"footer": {
+		"next-link": "chevron.html",
+		"prev-link": "solar.html"
 	}
 }

@@ -19,22 +19,35 @@
 	</div>
 	<div class="full-width-wrap grass">
 		<div class="container">
+			<div class="row conclusion margin-bottom-60">
+				<div class="col-md-8 col-md-offset-2">
+					<h4 class="weight-thin text-center text-white">{{ conclusion }}</h3>
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-xs-4">
 					{{#each button}}
-					<img class="journey-button" id="{{name}}" src="assets/images/solar/journey_button.png">
-					<h4>{{topic}}</h4>
+					<div id="{{name}}" class="journey-button">
+						<img class="img-responsive center-block" src="assets/images/solar/journey_button.png">
+						<h4 class="journey-button-title text-center">{{{topic}}}</h4>
+					</div>
 					{{/each}}
 				</div>
-				<div class="col-md-10">
+				<div class="padding-top-100 col-xs-6">
 					{{#each button}}
-					<div id="{{name}}" class="journey-content">
-						<h3>{{title1}}</h3>
-						<p>{{body1}}</p>
-						<h3>{{title2}}</h3>
-						<p>{{body2}}</p>
-						<h3>{{title3}}</h3>
-						<p>{{body3}}</p>
+					<div id="{{name}}" class="journey-content text-white">
+						<div class="margin-bottom-40">
+							<h3>{{title1}}</h3>
+							<p>{{body1}}</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>{{title2}}</h3>
+							<p>{{body2}}</p>
+						</div>
+						<div class="margin-bottom-40">
+							<h3>{{title3}}</h3>
+							<p>{{body3}}</p>
+						</div>
 					</div>
 					{{/each}}
 				</div>
