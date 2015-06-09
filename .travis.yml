@@ -10,7 +10,7 @@ deploy:
   access_key_id: AKIAJJLZSLJXQBVDPS3Q
   secret_access_key:
     secure: tsPXVh1PMRnqgS6G7n8vFzMc6ISLLuDUq9s0OAEZAMsTPf74FHqrw5sLY9RmNpHt4qxrovv4znu4PP3Zt8A6z6w4yfuPONpZQtbXt+DTLC0T0MOeKY283xvrQsOcju2jGy7IuzUVJoV3veJwwGMPGgzfgwHN5urTrylcC9HH0JI=
-  bucket: http://www.leungportfolio.com.s3-website-us-east-1.amazonaws.com/
+  bucket: http://www.leungportfolio.com.s3-website-us-east-1.amazonaws.com
   acl: public_read
   region: us-west-2
   local_dir: dist
