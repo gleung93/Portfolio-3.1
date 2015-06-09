@@ -17,14 +17,7 @@
         <link rel="stylesheet" href="assets/css/leungportfolio.css">
         
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
-        <script src="assets/js/journey.js"></script>
-        <script src="assets/js/annotate.js"></script>
-        <script src="assets/js/skill-spokes.js"></script>
-        <script src="assets/js/animated-gradient.js"></script>
-        <script src="assets/js/experience_selector.js"></script>
         <script src="assets/js/bootstrap-magnify.min.js"></script>
         <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
@@ -77,7 +70,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h3>About the project</h3>
-				<p>As my skills develope I find I am never satisfied with my previous work. Last years portfolio website had stylesheets that were a mess, html that was difficult to read and the site completely fell apart on mobile. I set out this year to create a responsive website that had a clear seperation of concerns and was composed of reusable modules. A big priority was to make easy to make future updates to the site</p>
+				<p>As my skills develope I find I am never satisfied with my previous work. Last year&#x27;s portfolio website had stylesheets that were a mess, html that was difficult to read and the site completely fell apart on mobile. I set out this year to create a responsive website that had a clear seperation of concerns and was composed of reusable modules.</p>
 			</div>
 		</div>
 		
@@ -100,7 +93,7 @@
 		
 		<div class=" below-image row">
 			<div class="col-md-12">
-				<img class="center-block" src="assets/images/portfolio/modules.png">
+				<img class="center-block" src="assets/images/portfolio/modules.jpg">
 			</div>
 		</div>
 		
@@ -121,7 +114,7 @@
 					<img src="assets/images/portfolio/bootstrap.png" class="center-block vertical-align">
 				</div>
 				<h3>Bootstrap</h3>
-				<p>Knowing that I wanted to build a responsive website I chose to use Bootstrap as a CSS framework. It was a good starting point but I eneded up not needing most of it’s features</p>
+				<p>Knowing that I wanted to build a responsive website I chose to use Bootstrap as a CSS framework. It was a good starting point but I ended up not needing most of it’s features</p>
 			</div>
 			
 			<div class="col-md-4 single-col">
@@ -189,7 +182,7 @@
 			
 			<div class="col-md-7">
 				<h3>QA Testing</h3>
-				<p>I used Google Page speed to figure out what parts of the site were impacting performance the most. </p>
+				<p>I used Google&#x27;s Developer Tools to figure out what parts of the site were impacting performance the most. </p>
 			</div>
 			
 		</div>
@@ -227,5 +220,13 @@
 </section>
         
         <script src="assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){               
+                if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                    skrollr.init({
+                    });
+                }
+            }
+        </script>
     </body>
 </html>

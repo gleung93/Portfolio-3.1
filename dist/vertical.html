@@ -17,14 +17,7 @@
         <link rel="stylesheet" href="assets/css/leungportfolio.css">
         
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
-        <script src="assets/js/journey.js"></script>
-        <script src="assets/js/annotate.js"></script>
-        <script src="assets/js/skill-spokes.js"></script>
-        <script src="assets/js/animated-gradient.js"></script>
-        <script src="assets/js/experience_selector.js"></script>
         <script src="assets/js/bootstrap-magnify.min.js"></script>
         <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
@@ -59,7 +52,7 @@
     
     	
 
-<div class="hero" style="background-image: url('assets/images/vertical/vertical_hero.png')">
+<div class="hero" style="background-image: url('assets/images/vertical/vertical_hero.jpg')">
 	
 	<div class="darken"></div>
 	
@@ -147,12 +140,12 @@
 		<div class="row">
 			
 			<div class="col-xs-4">
-				<a role="button" class="btn btn-primary-left" href="genability"><i class="fa fa-arrow-left"></i> Previous Project</a>
+				<a role="button" class="btn btn-primary-left" href="qc.html"><i class="fa fa-arrow-left"></i> Previous Project</a>
 			</div>
 			
 			
 			<div class="col-xs-4 pull-right">
-				<a role="button" class="btn btn-primary-right" href="qc.html">Next Project <i class="fa fa-arrow-right"></i></a>
+				<a role="button" class="btn btn-primary-right" href="genability.html">Next Project <i class="fa fa-arrow-right"></i></a>
 			</div>
 			
 		</div>
@@ -160,5 +153,13 @@
 </section>
         
         <script src="assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){               
+                if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                    skrollr.init({
+                    });
+                }
+            }
+        </script>
     </body>
 </html>

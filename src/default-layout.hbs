@@ -18,11 +18,6 @@
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
-        <script src="assets/js/journey.js"></script>
-        <script src="assets/js/annotate.js"></script>
-        <script src="assets/js/skill-spokes.js"></script>
-        <script src="assets/js/animated-gradient.js"></script>
-        <script src="assets/js/experience_selector.js"></script>
         <script src="assets/js/bootstrap-magnify.min.js"></script>
         <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
@@ -35,5 +30,13 @@
     	{{> body }}
         
         <script src="assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){               
+                if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                    skrollr.init({
+                    });
+                }
+            }
+        </script>
     </body>
 </html>

@@ -35,14 +35,14 @@
 	},
 	"section1": {
 		"section-title": "Design School",
-		"sub-title": "I’m in my 4th year at the University of Cincinnati’s  DAAP Program earning a degree in Graphic comunication design. I’m on track to graduation in spring of 2016.",
-		"img-src": "assets/images/index/daap3.png",
+		"sub-title": "I’m in my 4th year at the University of Cincinnati’s  DAAP Program earning a degree in Graphic Comunication Design. I’m on track to graduation in spring of 2016.",
+		"img-src": "assets/images/index/daap.jpg",
 		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'"
 	},
 	"section2": {
 		"section-title": "Experience",
 		"sub-title": "I have over a year of experience working in design in the San Francisco Bay Area.",
-		"img-src": "assets/images/index/sf3.png",
+		"img-src": "assets/images/index/sf.jpg",
 		"text-color": "text-white",
 		"job1": {
 			"heading": "INTERACTION DESIGN INTERN | SPRING 2015",
@@ -66,18 +66,18 @@
 		"text-color": "",
 		"title-animation": "data--10p-bottom-top='opacity:0' data--35p-bottom-top='opacity:1'",
 		"companies": [{
-			"logo": "assets/images/index/chevron_logo.png",
-			"heading": "Chevron Corporate Website Redesign",
-			"body":"Chevron wanted a new digital platform to express their human energy brand. I worked as an interaction designer on a team of visual designers, developers and writers.",
-			"CTA":"View Project",
-			"link": "chevron.html",
-			"item-animation": "data--10p-bottom-top='opacity:0' data--30p-bottom-top='opacity:1'"
-		},{
 			"logo": "assets/images/index/pge_logo.png",
 			"heading": "PGE&E Solar Dashboard",
 			"body":"Pacific Gas and Electric wanted a unique online experience so their solar customers could understand their energy bill. I led the design of this project and was responsible for all phases of the design process.",
 			"CTA":"View Project",
 			"link": "solar.html",
+			"item-animation": "data--10p-bottom-top='opacity:0' data--30p-bottom-top='opacity:1'"
+		},{
+			"logo": "assets/images/index/chevron_logo.png",
+			"heading": "Chevron Corporate Website Redesign",
+			"body":"Chevron wanted a new digital platform to express their human energy brand. I worked as an interaction designer on a team of visual designers, developers and writers.",
+			"CTA":"View Project",
+			"link": "chevron.html",
 			"item-animation": "data--10p-bottom-top='opacity:0' data--30p-bottom-top='opacity:1'"
 		},{
 			"logo": "assets/images/index/genability_logo.png",
@@ -104,7 +104,7 @@
 		"img-src-skype": "assets/images/contact/skype_small.png",
 		"img-src-linkedin": "assets/images/contact/linkedin_small.png",
 		"text-color": "text-white",
-		"email":"gleung93@gmail.com",
+		"email":"leunggc@mail.uc.edu",
 		"title-animation": "data--5p-bottom-top='opacity:0' data--20p-bottom-top='opacity:1'"
 	}
 }

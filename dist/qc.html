@@ -17,14 +17,7 @@
         <link rel="stylesheet" href="assets/css/leungportfolio.css">
         
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/velocity.min.js"></script>
         <script src="assets/js/portfolio.js"></script>
-        <script src="assets/js/journey.js"></script>
-        <script src="assets/js/annotate.js"></script>
-        <script src="assets/js/skill-spokes.js"></script>
-        <script src="assets/js/animated-gradient.js"></script>
-        <script src="assets/js/experience_selector.js"></script>
         <script src="assets/js/bootstrap-magnify.min.js"></script>
         <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
@@ -59,7 +52,7 @@
     
     	
 
-<div class="hero" style="background-image: url('assets/images/qc/qc_hero.png')">
+<div class="hero" style="background-image: url('assets/images/qc/final.jpg')">
 	
 	<div class="darken"></div>
 	
@@ -67,7 +60,7 @@
 		<div class="row">
 			<div class="col-md-6 text-white">
 				<h1>Quantified Commute</h1>
-				<h3>UX / MOBILE UI / DAAP </h3>
+				<h3>UX / MOBILE UI </h3>
 			</div>
 		</div>
 	</div>
@@ -79,7 +72,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h3>About the project</h3>
-				<p>This project was an exploration of information architecture. My goal was to assemble a dataset, look for trends or interesting insights and then visualize it in an understandable and engaging way</p>
+				<p>This two phase project began with tracking a personal activity for 3 weeks and then analyzing the data for trends and insights. The second phase required us to create a digital product that would help users organize and plan around the particular activity.</p>
 			</div>
 		</div>
 		
@@ -90,8 +83,8 @@
 		<div class="row">
 			
 			<div class="col-md-6  text-white">
-				<h3>Tracking every aspect of my driving for 3 weeks</h3>
-				<p>Each day this semester I commuted 21 miles to and from campus each day and it was a source of much stress and frustration. I decided to track this activity to see if there was any way to improve the experience. </p>
+				<h3>Tracking every aspect  of my driving for 3 weeks</h3>
+				<p>Each day this semester I commuted 21 miles to and from campus and it was a source of much stress and frustration. I decided to track this activity to see if there was any way to improve the experience. </p>
 			</div>
 			<div class="col-md-6 side-image">
 				<img class="img-responsive center-block" src="assets/images/qc/miles.png">
@@ -102,7 +95,7 @@
 		
 		<div class="row conclusion text-white">
 			<div class="col-md-8 col-md-offset-2">
-				<h4 class="weight-thin text-center">I was able to use the sensors on an iphone to gather the data required to analyze my driving patterns.</h3>
+				<h4 class="weight-thin text-center">I was able to use the sensors on my iphone to gather the data required to analyze my driving patterns.</h3>
 			</div>
 		</div>
 		
@@ -132,7 +125,7 @@
 	<div class="full-width-wrap">
 		<div class="gradient-top-blue"></div>
 	</div>
-	<img class="img-responsive" src="assets/images/qc/iphone_car.png">
+	<img class="img-responsive" src="assets/images/qc/iphone_car.jpg">
 </section>
 <section class="module image-side ">
 	<div class="container">
@@ -160,7 +153,51 @@
 		
 	</div>
 </section>
+<section class="module image-side ">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 col-md-push-6  ">
+				<h3>Translating the insights  into a digital product</h3>
+				<p>I set out to create a mobile application that gives commuters insight into the variations of their day to day commute length.<br><br>By understanding these trends users can make informed decisions about their departure, allowing them to take control of their commute and reduce anxiety. </p>
+			</div>
+			<div class="col-md-6 col-md-pull-6 side-image">
+				<img class="img-responsive center-block" src="assets/images/qc/logo.png">
+			</div>
+			
+		</div>
+		
+		
+	</div>
+</section>
+<section class="full-width-wrap margin-bottom-100">
+	<img class="img-responsive" data-toggle="magnify" src="assets/images/qc/final.jpg">
+</section>
+<section class="full-width-wrap dark-gray-background footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-4">
+				<a role="button" class="btn btn-primary-left" href="thermostat.html"><i class="fa fa-arrow-left"></i> Previous Project</a>
+			</div>
+			
+			
+			<div class="col-xs-4 pull-right">
+				<a role="button" class="btn btn-primary-right" href="vertical.html">Next Project <i class="fa fa-arrow-right"></i></a>
+			</div>
+			
+		</div>
+	</div>
+</section>
         
         <script src="assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){               
+                if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                    skrollr.init({
+                    });
+                }
+            }
+        </script>
     </body>
 </html>

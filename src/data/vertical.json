@@ -2,7 +2,7 @@
 	"hero": {
 		"page-title": "Vertical Frontier",
 		"sub-title1": "DATA VISUALIZATION",
-		"img-src": "assets/images/vertical/vertical_hero.png",
+		"img-src": "assets/images/vertical/vertical_hero.jpg",
 		"darken": "true"
 	},
 	"overview": {
@@ -41,8 +41,8 @@
 		"img-src": "assets/images/vertical/vert_final.png"
 	},
 	"footer": {
-		"prev-link": "genability",
-		"next-link": "qc.html"
+		"prev-link": "qc.html",
+		"next-link": "genability.html"
 	}
 
 }
